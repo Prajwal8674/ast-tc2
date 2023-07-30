@@ -21,6 +21,60 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
       <style>
+         /* vars */
+
+button {
+  --border-width: 2px;
+  --border-radius: 50px;
+  --color-1:rgb(224, 53, 240);
+  --color-2: #800080;
+}
+
+/* code */
+
+button {
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #ddd;
+  width: 120px;
+  position: relative;
+  background: linear-gradient(to right, rgb(224, 53, 240), rgb(113, 0, 128)),
+    linear-gradient(to right, rgb(224, 53, 240), rgb(113, 0, 128));
+  background-position: var(--border-radius) 0, var(--border-radius) 100%;
+  background-repeat: no-repeat;
+  background-size: calc(100% - var(--border-radius) - var(--border-radius))
+    var(--border-width);
+  padding: 14px 24px;
+  border-radius: var(--border-radius);
+  border: none;
+}
+
+button:before,
+button:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: var(--border-radius);
+  top: 0;
+  bottom: 0;
+}
+
+button:before {
+  left: 0;
+  border: var(--border-width) solid var(--color-1);
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+  border-right-color: transparent;
+}
+
+button:after {
+  right: 0;
+  border: var(--border-width) solid var(--color-2);
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  border-left-color: transparent;
+}
+
       </style>
       <title>ASTERICS TECHNOCRAT</title>
    </head>
@@ -67,9 +121,8 @@
                      <li class="nav-item"> <a class="nav-link" href="#contact" tabindex="-1" aria-disabled="true">Contact</a></li>
                      <li class="nav-item ml-auto">
                         <!-- Added ml-auto class to align the button on the right side -->
-                        <button class="btn btn-primary" style="background-color: transparent; border-radius: 25px; border: 2px solid #800080;
-                           transition: background-color 0.3s ease-in-out;
-                           border-radius: 25px; cursor: pointer; padding: 10px 20px; margin-left: 230px;">EXPLORE</button>
+                        
+                        <button>Join Us</button>
                      </li>
                      <!-- Added the button within the <li> element -->
                   </ul>

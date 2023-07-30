@@ -11,13 +11,20 @@
   padding: 10px;
   outline: none;
   border-radius: 50px;
-  margin-left: 70px;
-  height: 40px;
+  display: block;
+  margin: 10px 60px;
+  padding: 10px 20px;
   width: 200px;
 }
 .navBut:hover{
   color: #001F3F;
   background-color: #fff;
+}
+@media (max-width: 767px) {
+  .navBut {
+      /* Make the button smaller for mobile view */
+      padding: 5px 10px;
+  }
 }
 @media (max-width: 767px) {
   .fh5co-home-banner .card-video {
@@ -1256,5 +1263,8 @@ footer .copy a:hover {
   }
 }
 .mar{
-  margin-top: 0px;
+  margin-top: 30px;
+}
+.marb{
+  margin-bottom: 30px;
 }

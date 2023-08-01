@@ -20,62 +20,390 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
-      <style>
+      <!-- <style>
          /* vars */
 
-button {
-  --border-width: 2px;
-  --border-radius: 50px;
-  --color-1:rgb(224, 53, 240);
-  --color-2: #800080;
+   .cls-1 {
+ fill: none;                                    
+ stroke-width: 1px;
+stroke: url(#linear-gradient);
+}
+      </style> -->
+       <style>
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {}
+        a,
+        a:hover,
+        a:focus,
+        a:active {
+            text-decoration: none;
+            outline: none;
+        }
+        
+        a,
+        a:active,
+        a:focus {
+            color: #333;
+            text-decoration: none;
+            transition-timing-function: ease-in-out;
+            -ms-transition-timing-function: ease-in-out;
+            -moz-transition-timing-function: ease-in-out;
+            -webkit-transition-timing-function: ease-in-out;
+            -o-transition-timing-function: ease-in-out;
+            transition-duration: .2s;
+            -ms-transition-duration: .2s;
+            -moz-transition-duration: .2s;
+            -webkit-transition-duration: .2s;
+            -o-transition-duration: .2s;
+        }
+        
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        img {
+    max-width: 100%;
+    height: auto;
+}
+        section {
+            padding: 0px 0;
+           /* min-height: 100vh;*/
+        }
+.btn {
+    padding: 14px 25px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+}
+.red-btn {
+    background: #ed1b24;
+    border: 2px solid #ed1b24;
+    color: #fff;
 }
 
-/* code */
-
-button {
-  font-weight: bold;
-  letter-spacing: 1px;
-  color: #ddd;
-  width: 120px;
-  position: relative;
-  background: linear-gradient(to right, rgb(224, 53, 240), rgb(113, 0, 128)),
-    linear-gradient(to right, rgb(224, 53, 240), rgb(113, 0, 128));
-  background-position: var(--border-radius) 0, var(--border-radius) 100%;
-  background-repeat: no-repeat;
-  background-size: calc(100% - var(--border-radius) - var(--border-radius))
-    var(--border-width);
-  padding: 14px 24px;
-  border-radius: var(--border-radius);
-  border: none;
+.red-btn:hover{
+    background: #1c376c;
+    color: #fff;
+    border-color: #ffffff;
 }
 
-button:before,
-button:after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: var(--border-radius);
-  top: 0;
-  bottom: 0;
+/*---------footer---------*/
+footer {
+    background-color: #222023;
+    background-image: -webkit-linear-gradient( top, #222023, #1e2c47 );
+    background-image: -moz-linear-gradient( top, #222023, #1e2c47 );
+    background-image: -o-linear-gradient( top, #222023, #1e2c47 );
+    background-image: linear-gradient( to bottom, #222023, #1e2c47 );
+    color: #fff;
+    padding: 220px 0;
+    font-size: 17px;
+}
+footer h3 {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+footer h4 {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-bottom: 2px;
+}
+.about-footer li i {
+    position: absolute;
+    left: 0;
+}
+.about-footer li {
+    padding-left: 40px;
+    position: relative;
+    margin-bottom: 40px;
 }
 
-button:before {
-  left: 0;
-  border: var(--border-width) solid var(--color-1);
-  border-top-left-radius: var(--border-radius);
-  border-bottom-left-radius: var(--border-radius);
-  border-right-color: transparent;
+.about-footer ul {
+    margin-top: 40px;
 }
 
-button:after {
-  right: 0;
-  border: var(--border-width) solid var(--color-2);
-  border-top-right-radius: var(--border-radius);
-  border-bottom-right-radius: var(--border-radius);
-  border-left-color: transparent;
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    color: #ed1b24;
+}
+.footer-title {
+    border-bottom: 2px solid #a61f2d;
+    padding-bottom: 25px;
+    margin-bottom: 35px;
+}
+
+ul.footer-social {
+    float: right;
+}
+
+ul.footer-social li {
+    display: inline;
+    margin-right: 16px;
+}
+
+ul.footer-social i {
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    color: #222025;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    font-weight: 800;
+}
+
+ul.footer-social li:last-child {
+    margin-right: 0px;
+}
+
+ul.footer-social i:hover {
+    background: #ed1b24;
+    color: #fff;
+}
+
+.page-more-info li {
+    margin-bottom: 31px;
+}
+
+footer .table td:first-child {
+    font-weight: 600;
+    padding-left: 33px;
+}
+
+footer .table td:last-child {text-align: right;}
+footer .table td {
+    padding: 0px;
+    border: 0;
+}
+
+footer .table tr {
+}
+
+footer .table td i {
+    position: absolute;
+    left: 0px;
+    font-size: 21px;
+    top: 6px;
+}
+
+footer .table td {
+    position: relative;
+    padding: 4px 0;
+}
+.footer-logo td {
+    padding-right: 4px !important;
+}
+
+.footer-logo td:last-child {
+    padding-right: 0px !important;
+}
+footer hr {
+    border-color: #9294a0;
+}
+
+.footer-bottom p {
+    text-align: right;
+}
+.footer-bottom {
+    margin-top: 30px;
+}
+.open-hours hr {
+    margin: 30px 0;
 }
 
       </style>
+
+
+
+      <style>
+
+* {
+	margin:0px;
+	padding:0px;
+}
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box; box-sizing: border-box; }
+
+.clearfix:before, .clearfix:after { display: table; content: ''; }
+.clearfix:after { clear: both; }
+
+
+body {
+	background: #ffffff;
+	color: #333;
+	font-weight: normal;
+	font-size: 1em;
+	font-family: 'Roboto', Arial, sans-serif;
+}
+
+input:focus, textarea:focus, keygen:focus, select:focus {
+	outline: none;
+}
+::-moz-placeholder {
+	color: #666;
+	font-weight: 300;
+	opacity: 1;
+}
+
+::-webkit-input-placeholder {
+	color: #666;
+	font-weight: 300;
+}
+
+
+/* Contact Form Styling */
+.container {
+	padding: 0 50px 70px;
+}
+.textcenter {
+	text-align: center;
+}
+.section1 {
+	text-align: center;
+	display: table;
+	width: 100%;
+}
+.section1 .shtext {
+	display: block;
+	margin-top: 20px;
+}
+.section1 .seperator {
+	border-bottom:1px solid #a2a2a2;
+	width: 35px;
+	display: inline-block;
+	margin: 20px;
+}
+
+.section1 h1 {
+	font-size: 40px;
+	color: #A44DD8;
+	font-weight: normal;
+}
+
+.section2 {
+    width: 1200px;
+    margin: 25px auto;
+}
+.section2 .col2 {
+	width: 48.71%;
+}
+.section2 .col2.first {
+	float: left;
+}
+.section2 .col2.last {
+	float: right;
+}
+.section2 .col2.column2 {
+	padding: 0 30px;
+}
+.section2 span.collig {
+	color: #a2a2a2;
+	margin-right: 10px;
+	display: inline-block;
+}
+.section2 .sec2addr {
+	display: block;
+	line-height: 26px;
+}
+.section2 .sec2addr p:first-child {
+	margin-bottom: 10px;
+}
+.section2 .sec2contactform input[type="text"], 
+.section2 .sec2contactform input[type="email"],
+.section2 .sec2contactform textarea {
+    padding: 18px;
+    border: 0;
+    background: #EDEDED;
+    margin: 7px 0;
+}
+.section2 .sec2contactform textarea {
+	width: 100%;
+	display: block;
+	color: #666;
+  resize:none;
+}
+.section2 .sec2contactform input[type="submit"] {
+	padding: 15px 40px;
+    color: #fff;
+    border: 0;
+    background: #A44DD8;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 7px 0;
+    cursor: pointer;
+}
+.section2 .sec2contactform h3 {
+	font-weight: normal;
+    margin: 20px 0;
+    margin-top: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 19px;
+    color: #A44DD8;
+}
+
+/* @media querries */
+
+@media only screen and (max-width: 1266px) {
+	.section2 {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 960px) {
+	.container {
+		padding: 0 30px 70px;
+	}
+	.section2 .col2 {
+		width: 100%;
+		display: block;
+	}
+	.section2 .col2.first {
+		margin-bottom: 10px;
+	}
+	.section2 .col2.column2 {
+		padding: 0;
+	}
+	body .sec2map {
+		height: 250px !important;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.section2 .sec2addr {
+		font-size: 14px;
+	}
+	.section2 .sec2contactform h3 {
+		font-size: 16px;
+	}
+	.section2 .sec2contactform input[type="text"], .section2 .sec2contactform input[type="email"], .section2 .sec2contactform textarea {
+		padding: 10px;
+		margin:3px 0;
+	}
+	.section2 .sec2contactform input[type="submit"] {
+		padding: 10px 30px;
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 420px) {
+	.section1 h1 {
+		font-size: 28px;
+	}	
+}
+</style>
       <title>ASTERICS TECHNOCRAT</title>
    </head>
    <body>
@@ -122,10 +450,9 @@ button:after {
                      <li class="nav-item ml-auto">
                         <!-- Added ml-auto class to align the button on the right side -->
                         
-                        <button>Join Us</button>
-                     </li>
-                     <!-- Added the button within the <li> element -->
-                  </ul>
+                 </li>
+                
+               </ul>
                </div>
             </div>
             <!-- <div class="mt-3 text-center custom-button"> 
@@ -937,285 +1264,183 @@ button:after {
             </div>
          </div>
       </div>
+
+      <!--footer start-->
       <footer class="container-fluid p-0 pr-0">
-         <div class="row mr-0 ml-0">
-            <div class="col-md-6 pr-0 pl-0 map">
-               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13035.46901327725!2d-80.85396551628644!3d35.234674411422155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8856a03af474f38f%3A0xf8301daadf5f7670!2sFourth+Ward%2C+Charlotte%2C+NC%2C+USA!5e0!3m2!1sen!2sin!4v1551001218548"  style="border:0" allowfullscreen></iframe>
-            </div>
-            <div class="col-md-6 content-us">
-               
-               <div class="contact-form" id="contact">
-                  <h3 class="text-uppercase">Contact me</h3>
-                  <input type="text" class="form-control" placeholder="Your Name">
-                  <input type="text" class="form-control" placeholder="Your Email">
-                  <textarea class="form-control" placeholder="Your Message"></textarea>
-                  <button type="submit">Send</button>
+               <!-- <div class="mapouter"><div class="gmap_canvas"><iframe width="770" height="510" id="gmap_canvas" src="https://maps.google.com/maps?q=Asterisc&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;text-align:right;height:510px;width:770px;}</style><a href="https://embedgooglemap.2yu.co">html embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:510px;width:770px;}</style></div></div>            </section> -->
+               <div class="container">
+                  <div class="innerwrap">
+                  
+                     <section class="section1 clearfix">
+                        <div class="textcenter">
+                           <span class="shtext">Contact Us</span>
+                           <span class="seperator"></span>
+                           <h1>Drop Us a Mail</h1>
+                        </div>
+                     </section>
+                  
+                     <section class="section2 clearfix">
+                        <div class="col2 column1 first">
+                           <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+                           <div class="sec2map" style='overflow: hidden; height: 550px; width: 100%;'>
+                               <div id='gmap_canvas' style='height: 100%; width: 100%;'></div>
+                               <div><small><a href="http://embedgooglemaps.com">embed google maps</a></small></div>
+                               <div><small><a href="http://freedirectorysubmissionsites.com/">free web directories</a></small></div>
+                           </div>
+                           <style>
+                               #gmap_canvas img {
+                                   max-width: none!important;
+                                   background: none!important;
+                               }
+                           </style>
+                           <script type='text/javascript'>
+                               function init_map() {
+                                   var myOptions = {
+                                       zoom: 14,
+                                       center: new google.maps.LatLng(21.17379942156375, 79.0430500887195),
+                                       mapTypeId: google.maps.MapTypeId.ROADMAP
+                                   };
+                                   map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+                                   marker = new google.maps.Marker({
+                                       map: map,
+                                       position: new google.maps.LatLng(21.17379942156375, 79.0430500887195)
+                                   });
+                               }
+                               google.maps.event.addDomListener(window, 'load', init_map);
+                           </script>
+                                                   </div>
+                        <div class="col2 column2 last">
+                           <div class="sec2innercont">
+                              
+                           </div>
+                           <div class="sec2contactform">
+                              <h3 class="sec2frmtitle">Want to Know More?? Drop Us a Mail</h3>
+                              <form action="">
+                                 <div class="clearfix">
+                                    <input class="col2 first" type="text" placeholder="FirstName">
+                                    <input class="col2 last" type="text" placeholder="LastName">
+                                 </div>
+                                 <div class="clearfix">
+                                    <input  class="col2 first" type="Email" placeholder="Email">
+                                    <input class="col2 last" type="text" placeholder="Contact Number">
+                                 </div>
+                                 <div class="clearfix">
+                                    <textarea name="textarea" id="" cols="30" rows="7">Your message here...</textarea>
+                                 </div>
+                                 <div class="clearfix"><input type="submit" value="Send"></div>
+                              </form>
+                           </div>
+            
+                        </div>
+                     </section>
+                  
+                  </div>
                </div>
-            </div>
+            
          </div>
+
          <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-         <div class="copy pt-4 pb-4" >
-            <div class="tcs-custom-container" style="color: white;">
-               <div class="row">
-                  <div class="col" style="color:white;">
-                     <div class="footer-link-box">
-                        <div>
-                           <div class="quick-link-box" >
-                              <h5 class="footer-title" >
-                                 <a href="https://www.tcs.com/what-we-do#industries" class="desktop-footer-section-title">Industries</a>
-                              </h5>
-                              <ul class="quick-links"  >
-                                 <li class="quick-links-list" >
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/what-we-do/industries/banking" style="color: #f3f4f9;">Banking</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/what-we-do/industries/capital-markets">Capital Markets</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/what-we-do/industries/consumer-goods-distribution">Consumer Goods and Distribution</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/what-we-do/industries/communications-media-information-services">Communications, Media, and Information Services</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/what-we-do/industries/education">Education</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/what-we-do/industries/energy-resources-utilities">Energy, Resources, and Utilities</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/what-we-do/industries/healthcare">Healthcare</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/what-we-do/industries/high-tech">High Tech</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/what-we-do/industries/insurance">Insurance</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/what-we-do/industries/life-sciences">Life Sciences</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/what-we-do/industries/manufacturing">Manufacturing</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/what-we-do/industries/public-services">Public Services</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/what-we-do/industries/retail">Retail</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/what-we-do/industries/travel-and-logistics">Travel and Logistics</a>
-                                 </li>
-                              </ul>
-                           </div>
+            <div class="container">
+                <div class="footer-top">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3 about-footer">
+                            <h3>Lorem Ipsum dummy text </h3>
+                            <ul>
+                                <li><a href="tel:(010) 1234 4321"><i class="fas fa-phone fa-flip-horizontal"></i>(010) 1234 4321</a></li>
+                                <li><i class="fas fa-map-marker-alt"></i>
+                                    1 / 105 Bay Lights,
+                                    <br/>Lorem Ipsum,
+                                    <br/>LIC 3201
+                                </li>
+                            </ul>
+                            <a href="" class="btn red-btn">Book Now</a>
                         </div>
-                     </div>
-                  </div>
-                  <div class="col">
-                     <div class="footer-link-box">
-                        <div>
-                           <div class="quick-link-box">
-                              <h5 class="footer-title">
-                                 <a href="https://www.tcs.com/content/tcs/global/en/what-we-do.html#services" class="desktop-footer-section-title">Services</a>
-                              </h5>
-                              <ul class="quick-links">
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/what-we-do/services/cloud">Cloud</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/what-we-do/services/cognitive-business-operations">Cognitive Business Operations</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/what-we-do/services/consulting">Consulting</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/what-we-do/services/cybersecurity">Cybersecurity</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/what-we-do/services/data-and-analytics">Data and Analytics</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/what-we-do/services/enterprise-solutions">Enterprise Solutions</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/what-we-do/services/iot-digital-engineering">IoT and Digital Engineering</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/what-we-do/services/sustainability-services">Sustainability Services</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/what-we-do/services/tcs-interactive">TCS Interactive</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/what-we-do/services/cloud/aws">TCS and AWS Cloud</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/what-we-do/services/cloud/enterprise">TCS Enterprise Cloud</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/what-we-do/services/cloud/google">TCS and Google Cloud</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/what-we-do/services/cloud/microsoft">TCS and Microsoft Cloud</a>
-                                 </li>
-                              </ul>
-                           </div>
+                        <div class="col-md-6 col-lg-2 page-more-info">
+                            <div class="footer-title">
+                                <h4>Page links</h4>
+                            </div>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Testimonial</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
                         </div>
-                     </div>
-                  </div>
-                  <div class="col">
-                     <div class="footer-link-box">
-                        <div>
-                           <div class="quick-link-box">
-                              <h5 class="footer-title">
-                                 <a href="https://www.tcs.com/what-we-do#products" class="desktop-footer-section-title">Products and Platforms</a>
-                              </h5>
-                              <ul class="quick-links">
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/what-we-do/products-platforms/tcs-add">TCS ADD™</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/what-we-do/products-platforms/tcs-bancs">TCS BaNCS™</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/what-we-do/products-platforms/tcs-bfsi-platforms">TCS BFSI Platforms</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/what-we-do/products-platforms/tcs-chroma">TCS CHROMA™</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/what-we-do/products-platforms/tcs-customer-intelligence-insights" >TCS Customer Intelligence &amp; Insights™</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/what-we-do/products-platforms/tcs-erp-on-cloud">TCS ERP on Cloud</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items quick-link-external" href="https://digitate.com/" target="_blank">ignio™</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/what-we-do/products-platforms/tcs-hobs">TCS HOBS™</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/what-we-do/products-platforms/tcs-intelligent-urban-exchange">TCS Intelligent Urban Exchange™</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/what-we-do/products-platforms/tcs-omnistore">TCS OmniStore™</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/what-we-do/products-platforms/tcs-optumera">TCS Optumera™</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/what-we-do/products-platforms/tcs-tap">TCS TAP™</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/what-we-do/products-platforms/quartz">Quartz™ – The Smart Ledgers™</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/what-we-do/products-platforms/tcs-twinx">TCS TwinX™</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/what-we-do/products-platforms/tcs-mastercraft">TCS MasterCraft™</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items quick-link-external" href="https://www.jile.io/" target="_blank">Jile™</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items quick-link-external" href="https://www.tcsion.com/dotcom/TCSSMB/" target="_blank">TCS iON™</a>
-                                 </li>
-                              </ul>
-                           </div>
+        
+                        <div class="col-md-6 col-lg-3 page-more-info">
+                            <div class="footer-title">
+                                <h4>More Info</h4>
+                            </div>
+                            <ul>
+                                <li><a href="#">Lorem ipsum</a></li>
+                                <li><a href="#">Dolor sit amet</a></li>
+                                <li><a href="#">Consectetur Adipisicing </a></li>
+                                <li><a href="#">Ed do eiusmod tempor incididunt</a></li>
+                            </ul>
                         </div>
-                     </div>
-                  </div>
-                  <div class="col">
-                     <div class="footer-link-box">
-                        <div>
-                           <div class="quick-link-box">
-                              <h5 class="footer-title">
-                                 <a href="https://www.tcs.com/insights" class="desktop-footer-section-title">Insights</a>
-                              </h5>
-                              <ul class="quick-links">
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/insights/customer-stories">Customer Stories</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/insights/topics/cloud-topic">Cloud</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/insights/topics/blockchain-topic">Blockchain</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/insights/topics/internet-of-things-topic">IoT</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/insights/topics/metaverse-topic">Metaverse</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/insights/topics/future-of-work-topic">Future of Work</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/insights/topics/health-and-wellness-topic">Health and Wellness</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/insights/topics/sustainability-topic">Sustainability</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/insights/topics/ai-ml-topic">AI and ML</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/insights/topics/cybersecurity-topic">Cybersecurity</a>
-                                 </li>
-                                 <li class="quick-links-list">
-                                    <a class="quick-links-list-items " href="https://www.tcs.com/insights/perspectives">Perspectives</a>
-                                 </li>
-                              </ul>
-                           </div>
+                        <div class="col-md-6 col-lg-4 open-hours">
+                            <div class="footer-title">
+                                <h4>Open hours</h4>
+                                <ul class="footer-social">
+                                    <li><a href="" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+        
+                                </ul>
+                            </div>
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td><i class="far fa-clock"></i>Monday Thursday</td>
+                                        <td>9:00am - 5:00pm</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="far fa-clock"></i>Friday</td>
+                                        <td>9:00am - 4:00pm</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="far fa-clock"></i>Sturday</td>
+                                        <td>9:00am - 1:30pm</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="far fa-clock"></i>Sunday</td>
+                                        <td>9:30am - 12:00pm</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <hr>
+                            <div class="footer-logo">
+        
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td><img src="https://i.ibb.co/vxc577d/dummy-logo3.jpg"></td>
+                                        <td><img src="https://i.ibb.co/vxc577d/dummy-logo3.jpg"></td>
+                                        <td><img src="https://i.ibb.co/vxc577d/dummy-logo3.jpg"></td>
+                                        <td><img src="https://i.ibb.co/vxc577d/dummy-logo3.jpg"></td>
+                                        <td><img src="https://i.ibb.co/vxc577d/dummy-logo3.jpg"></td>
+                                </tbody>
+                            </table>
+                            </div>
                         </div>
-                     </div>
-                     <div class="footer-link-box mt-4">
-                        <div class="quick-link-box">
-                           <h5 class="footer-title">
-                              <a href="https://www.tcs.com/who-we-are" class="desktop-footer-section-title" >More information</a>
-                           </h5>
-                           <ul class="quick-links">
-                              <li class="quick-links-list">
-                                 <a class="quick-links-list-items " href="https://www.tcs.com/careers">Careers</a>
-                              </li>
-                              <li class="quick-links-list">
-                                 <a class="quick-links-list-items " href="https://www.tcs.com/who-we-are/corporate-social-responsibility">Corporate Social Responsibility</a>
-                              </li>
-                              <li class="quick-links-list">
-                                 <a class="quick-links-list-items " href="https://www.tcs.com/who-we-are/diversity-equity-inclusion">Diversity, Equity, and Inclusion</a>
-                              </li>
-                              <li class="quick-links-list">
-                                 <a class="quick-links-list-items " href="https://www.tcs.com/investor-relations" target="_blank">Investor Relations</a>
-                              </li>
-                              <li class="quick-links-list">
-                                 <a class="quick-links-list-items " href="https://www.tcs.com/who-we-are/sports-sponsorships">Sports Sponsorships</a>
-                              </li>
-                              <li class="quick-links-list">
-                                 <a class="quick-links-list-items " href="https://www.tcs.com/what-we-do/pace-innovation">TCS Pace™</a>
-                              </li>
-                              <li class="quick-links-list">
-                                 <a class="quick-links-list-items " href="https://www.tcs.com/what-we-do/research">TCS Research</a>
-                              </li>
-                              <li class="quick-links-list">
-                                 <a class="quick-links-list-items " href="https://www.tcs.com/who-we-are/tcs-way">The TCS Way</a>
-                              </li>
-                              <li class="quick-links-list">
-                                 <a class="quick-links-list-items " href="https://www.tcs.com/who-we-are">Who we are</a>
-                              </li>
-                           </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="footer-bottom">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <a href="">Privacy policy</a>
                         </div>
-                     </div>
-                  </div>
-               </div>
+                        <div class="col-sm-8">
+                            <p>Lorem ipsum dolor sit amet @ 2019 All rights reserved</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p><a href="https://freehtml5.co/" target="_blank"> &copy; 1695 Asterics Technocrat</a>  &nbsp;  |  &nbsp; Design by <a href="https://freehtml5.co/" target="_blank">Asterics Technocrat.co</a> &nbsp; | &nbsp;  All rights reserved</p>
-         </div>
-         </div>
-      </footer>
+        </footer>
+              <!--footer End-->
+
       <!-- jQuery first, then Popper.js, then Bootstrap JS --> 
       <script src="assets/js/jquery-3.3.1.slim.min.js"></script> 
       <script src="assets/js/popper.min.js" ></script> 

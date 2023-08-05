@@ -1,1360 +1,837 @@
-<!DOCTYPE html>
-<!--
-   Girly by FreeHTML5.co
-   Twitter: https://twitter.com/fh5co
-   Facebook: https://fb.com/fh5co
-   URL: https://freehtml5.co
-   -->
+<!doctype html>
 <html lang="en">
-   <head>
-      <!-- Required meta tags -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-      <link rel="stylesheet" href="assets/css/style.css">
-      <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
-      <!-- Google Web Fonts -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
-      <!-- <style>
-         /* vars */
 
-   .cls-1 {
- fill: none;                                    
- stroke-width: 1px;
-stroke: url(#linear-gradient);
-}
-      </style> -->
-       <style>
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {}
-        a,
-        a:hover,
-        a:focus,
-        a:active {
-            text-decoration: none;
-            outline: none;
-        }
-        
-        a,
-        a:active,
-        a:focus {
-            color: #333;
-            text-decoration: none;
-            transition-timing-function: ease-in-out;
-            -ms-transition-timing-function: ease-in-out;
-            -moz-transition-timing-function: ease-in-out;
-            -webkit-transition-timing-function: ease-in-out;
-            -o-transition-timing-function: ease-in-out;
-            transition-duration: .2s;
-            -ms-transition-duration: .2s;
-            -moz-transition-duration: .2s;
-            -webkit-transition-duration: .2s;
-            -o-transition-duration: .2s;
-        }
-        
-        ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-        img {
-    max-width: 100%;
-    height: auto;
-}
-        section {
-            padding: 0px 0;
-           /* min-height: 100vh;*/
-        }
-.btn {
-    padding: 14px 25px;
-    text-transform: uppercase;
-    -webkit-transition: all 0.8s;
-    -moz-transition: all 0.8s;
-    -o-transition: all 0.8s;
-    transition: all 0.8s;
-}
-.red-btn {
-    background: #ed1b24;
-    border: 2px solid #ed1b24;
-    color: #fff;
-}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-.red-btn:hover{
-    background: #1c376c;
-    color: #fff;
-    border-color: #ffffff;
-}
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-/*---------footer---------*/
-footer {
-    background-color: #222023;
-    background-image: -webkit-linear-gradient( top, #222023, #1e2c47 );
-    background-image: -moz-linear-gradient( top, #222023, #1e2c47 );
-    background-image: -o-linear-gradient( top, #222023, #1e2c47 );
-    background-image: linear-gradient( to bottom, #222023, #1e2c47 );
-    color: #fff;
-    padding: 220px 0;
-    font-size: 17px;
-}
-footer h3 {
-    font-size: 24px;
-    font-weight: 600;
-    letter-spacing: 1px;
-}
-footer h4 {
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    display: inline-block;
-    margin-bottom: 2px;
-}
-.about-footer li i {
-    position: absolute;
-    left: 0;
-}
-.about-footer li {
-    padding-left: 40px;
-    position: relative;
-    margin-bottom: 40px;
-}
+    <title>Festava Live - Bootstrap 5 CSS Template</title>
 
-.about-footer ul {
-    margin-top: 40px;
-}
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-footer a {
-    color: #fff;
-}
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-footer a:hover {
-    color: #ed1b24;
-}
-.footer-title {
-    border-bottom: 2px solid #a61f2d;
-    padding-bottom: 25px;
-    margin-bottom: 35px;
-}
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap" rel="stylesheet">
 
-ul.footer-social {
-    float: right;
-}
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-ul.footer-social li {
-    display: inline;
-    margin-right: 16px;
-}
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
 
-ul.footer-social i {
-    width: 30px;
-    height: 30px;
-    background: #fff;
-    color: #222025;
-    text-align: center;
-    line-height: 30px;
-    border-radius: 30px;
-    font-size: 16px;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
-    font-weight: 800;
-}
+    <link href="css/templatemo-festava-live.css" rel="stylesheet">
 
-ul.footer-social li:last-child {
-    margin-right: 0px;
-}
-
-ul.footer-social i:hover {
-    background: #ed1b24;
-    color: #fff;
-}
-
-.page-more-info li {
-    margin-bottom: 31px;
-}
-
-footer .table td:first-child {
-    font-weight: 600;
-    padding-left: 33px;
-}
-
-footer .table td:last-child {text-align: right;}
-footer .table td {
-    padding: 0px;
-    border: 0;
-}
-
-footer .table tr {
-}
-
-footer .table td i {
-    position: absolute;
-    left: 0px;
-    font-size: 21px;
-    top: 6px;
-}
-
-footer .table td {
-    position: relative;
-    padding: 4px 0;
-}
-.footer-logo td {
-    padding-right: 4px !important;
-}
-
-.footer-logo td:last-child {
-    padding-right: 0px !important;
-}
-footer hr {
-    border-color: #9294a0;
-}
-
-.footer-bottom p {
-    text-align: right;
-}
-.footer-bottom {
-    margin-top: 30px;
-}
-.open-hours hr {
-    margin: 30px 0;
-}
-
-      </style>
-
-
-
-      <style>
-
-* {
-	margin:0px;
-	padding:0px;
-}
-*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box; box-sizing: border-box; }
-
-.clearfix:before, .clearfix:after { display: table; content: ''; }
-.clearfix:after { clear: both; }
-
-
-body {
-	background: #ffffff;
-	color: #333;
-	font-weight: normal;
-	font-size: 1em;
-	font-family: 'Roboto', Arial, sans-serif;
-}
-
-input:focus, textarea:focus, keygen:focus, select:focus {
-	outline: none;
-}
-::-moz-placeholder {
-	color: #666;
-	font-weight: 300;
-	opacity: 1;
-}
-
-::-webkit-input-placeholder {
-	color: #666;
-	font-weight: 300;
-}
-
-
-/* Contact Form Styling */
-.container {
-	padding: 0 50px 70px;
-}
-.textcenter {
-	text-align: center;
-}
-.section1 {
-	text-align: center;
-	display: table;
-	width: 100%;
-}
-.section1 .shtext {
-	display: block;
-	margin-top: 20px;
-}
-.section1 .seperator {
-	border-bottom:1px solid #a2a2a2;
-	width: 35px;
-	display: inline-block;
-	margin: 20px;
-}
-
-.section1 h1 {
-	font-size: 40px;
-	color: #A44DD8;
-	font-weight: normal;
-}
-
-.section2 {
-    width: 1070px;
-    margin: 25px auto;
-}
-.section2 .col2 {
-	width: 48.71%;
-}
-.section2 .col2.first {
-	float: left;
-}
-.section2 .col2.last {
-	float: right;
-}
-.section2 .col2.column2 {
-	padding: 0 30px;
-}
-.section2 span.collig {
-	color: #a2a2a2;
-	margin-right: 10px;
-	display: inline-block;
-}
-.section2 .sec2addr {
-	display: block;
-	line-height: 26px;
-}
-.section2 .sec2addr p:first-child {
-	margin-bottom: 10px;
-}
-.section2 .sec2contactform input[type="text"], 
-.section2 .sec2contactform input[type="email"],
-.section2 .sec2contactform textarea {
-    padding: 18px;
-    border: 0;
-    background: #EDEDED;
-    margin: 7px 0;
-}
-.section2 .sec2contactform textarea {
-	width: 100%;
-	display: block;
-	color: #666;
-  resize:none;
-}
-.section2 .sec2contactform input[type="submit"] {
-	padding: 15px 40px;
-    color: #fff;
-    border: 0;
-    background: #A44DD8;
-    font-size: 16px;
-    text-transform: uppercase;
-    margin: 7px 0;
-    cursor: pointer;
-}
-.section2 .sec2contactform h3 {
-	font-weight: normal;
-    margin: 20px 0;
-    margin-top: 30px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 19px;
-    color: #A44DD8;
-}
-
-/* @media querries */
-
-@media only screen and (max-width: 1266px) {
-	.section2 {
-		width: 100%;
-	}
-}
-@media only screen and (max-width: 960px) {
-	.container {
-		padding: 0 15px 0px;
-	}
-	.section2 .col2 {
-		width: 100%;
-		display: block;
-	}
-	.section2 .col2.first {
-		margin-bottom: 10px;
-	}
-	.section2 .col2.column2 {
-		padding: 0;
-	}
-	body .sec2map {
-		height: 250px !important;
-	}
-}
-@media only screen and (max-width: 768px) {
-	.section2 .sec2addr {
-		font-size: 14px;
-	}
-	.section2 .sec2contactform h3 {
-		font-size: 16px;
-	}
-	.section2 .sec2contactform input[type="text"], .section2 .sec2contactform input[type="email"], .section2 .sec2contactform textarea {
-		padding: 10px;
-		margin:3px 0;
-	}
-	.section2 .sec2contactform input[type="submit"] {
-		padding: 10px 30px;
-		font-size: 14px;
-	}
-}
-@media only screen and (max-width: 420px) {
-	.section1 h1 {
-		font-size: 28px;
-	}	
-}
-</style>
-      <title>ASTERICS TECHNOCRAT</title>
-   </head>
-   <body>
-      <!-- <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
-         <a href="index.html" class="navbar-brand p-0">
-           <h2 class="m-0"><i class=""></i>Asterisc<i class=""></i>Technocrat</h2>
-         </a>
-         <button class="navbar-toggler" type="button" name="navbar-toggler" aria-label="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-           <span class="fa fa-bars"></span>
-         </button>
-         <div class="collapse navbar-collapse" id="navbarCollapse">
-           <div class="navbar-nav ms-auto py-0">
-             <a href="index.html" class="nav-item nav-link ">Home</a>
-                     <a href="about.html" class="nav-item nav-link">About</a>
-                     <a href="service.html" class="nav-item nav-link">Services</a>
-                     <a href="feature.html" class="nav-item nav-link">Our features</a>
-                     <a href="internship.html" class="nav-item nav-link active">Internship</a>
-                     <a href="Careers.html" class="nav-item nav-link">Career</a>
-                     <a href="blog.html" class="nav-item nav-link">Blog</a>
-                     <a href="contact.html" class="nav-item nav-link">Contact</a>
-           </div>
-          
-         </div>
-         </nav> -->
-      <header>
-         <nav class="navbar navbar-expand-md fixed-top maine-menu">
-            <h1 id="navitemlogo" style="text-align: left;font-family: Nunito, sans-serif; font-weight: 800;">AsteriscTechnocrat</h1>
-            <button class="navbar-toggler ml-auto" data-target="#my-nav" onclick="myFunction(this)" data-toggle="collapse">
-            <span class="bar1"></span>
-            <span class="bar2"></span>
-            <span class="bar3"></span>
-            </button>
-            <a href="index.html" class="navbarbrandd"></a>
-            <div class="container">
-               <div id="my-nav" class="collapse navbar-collapse" style="align-items: center;">
-                  <ul class="navbar-nav mx-auto">
-                     <li class="nav-item active"> <a class="nav-link" href="#">Home</a> </li>
-                     <li class="nav-item"> <a class="nav-link" href="#about" tabindex="-1" aria-disabled="true">About</a></li>
-                     <li class="nav-item"> <a class="nav-link" href="#activity" tabindex="-1" aria-disabled="true">Team</a></li>
-                     <li class="nav-item"> <a class="nav-link" href="#portfolio" tabindex="-1" aria-disabled="true">Portfolio</a></li>
-                     <li class="nav-item"> <a class="nav-link" href="#testimonial" tabindex="-1" aria-disabled="true">Testimonial</a></li>
-                     <li class="nav-item"> <a class="nav-link" href="blog.html" tabindex="-1" aria-disabled="true">Blog</a></li>
-                     <li class="nav-item"> <a class="nav-link" href="#contact" tabindex="-1" aria-disabled="true">Contact</a></li>
-                     <li class="nav-item ml-auto">
-                        <!-- Added ml-auto class to align the button on the right side -->
-                        
-                 </li>
-                
-               </ul>
-               </div>
-            </div>
-            <!-- <div class="mt-3 text-center custom-button"> 
-               <button class="btn btn-primary" style="background-color: transparent; border-radius: 25px; border: 2px solid #800080;
-               transition: background-color 0.3s ease-in-out;
-               border-radius: 25px; cursor: pointer; padding: 10px 20px;">EXPLORE</button> -->
-            </div>
-         </nav>
-      </header>
-      <div class="container-fluid fh5co-home-banner">
-         <div class="card">
-            <video class="card-video" autoplay muted loop>
-               <source src="assets/img/stu video 2.mp4" type="video/mp4">
-               Your browser does not support the video tag.
-            </video>
-            <div class="card-img-overlay">
-               <div class="center-text">
-                  <h2 class="card-title">Coding is not just code, that is a live thing to serve everyone!</h2>
-                  <a href="#" class="btn">
-                     <svg width="201" height="51" viewBox="0 0 201 51">
-                        <defs>
-                           <style>
-                              .cls-1 {
-                              fill: none;
-                              stroke-width: 1px;
-                              stroke: url(#linear-gradient);
-                              }
-                           </style>
-                           <linearGradient id="linear-gradient" x1="140.508" y1="50.5" x2="60.492" y2="0.5" gradientUnits="userSpaceOnUse">
-                              <stop offset="0" stop-color="#e90e65"/>
-                              <stop offset="1" stop-color="#fff"/>
-                           </linearGradient>
-                        </defs>
-                        <rect id="Rounded_Rectangle_1" data-name="Rounded Rectangle 1" class="cls-1" x="0.5" y="0.5" width="200" height="50" rx="25" ry="25"/>
-                     </svg>
-                     Explore
-                  </a>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- <div class="data">
-         <h2 >    &nbsp; Real-World Experience for Career Success</h2>
-         <p>
-         <br>
-         We offer real-world experience, showing you just what it’s like to work at the highest-level, accelerating the progression of your career, and setting you up for success. As a student intern, the knowledge and skills you’ve gained during your studies will come to life.
-         <p>As an intern with us, you’ll:</p>
-         
-         
-         </p>
-         
-         
-         
-         <ol>
-           <li> Have a big impact. You’ll own your project start to finish - diving deep into products, services, and programs that will impact millions of customers.</li>
-           
-           <li>Gain skills. Through formalized training and hands-on learning, you’ll analyze data, problem solve, and design solutions with the customer at the center.</li>
-           
-           <li>Build a network. From day-to-day to special events, you’ll have the chance to link up with peers globally.</li>
-           
-           <li>Receive a mentor. Your manager pairs you with a mentor who will support and coach you throughout your internship - providing valuable feedback to ensure success.</li>
-         </ol>
-         
-         <p>
-           Our internships are for rising seniors and recent graduates with an undergraduate degree, Master’s degree, MBA or PhD.
-         
-         </p>
-         <p>
-           <br>
-           <strong>Hear from recent graduates</strong>
-         </p>
-         
-         <p>
-            “Amazon provided a lot of responsibility for me as intern, because I had to make changes to my team’s code base and these changes had the potential to pushed out to customers. I felt that the work I was doing was impactful.”
-         </p>
-          -->
-      <br>
-      <br>
-      <br>
-      <div class="content overview" id="about">
-         <div class="content-container container">
-            <div class="row">
-               <div class="col-12">
-                  <h2 class="headline">Real-World Experience for Career Success </h2>
-                  <div class="description">
-                     <p>
-                        &nbsp;<br>
-                        We offer real-world experience, showing you just what it’s like to work at the highest-level, accelerating the progression of your career, and setting you up for success. As a student intern, the knowledge and skills you’ve gained during your studies will come to life.
-                     </p>
-                     <p>As an intern with us, you’ll:</p>
-                     <ol>
-                        <li>Have a big impact. You’ll own your project start to finish - diving deep into products, services and programs that will impact millions of customers.</li>
-                        <li>Gain skills. Through formalized training and hands-on learning, you’ll analyze data, problem solve, and design solutions with the customer at the center.</li>
-                        <li>Build a network. From day-to-day to special events, you’ll have the chance to link up with peers globally.</li>
-                        <li>Receive a mentor. Your manager pairs you with a mentor who will support and coach you throughout your internship - providing valuable feedback to ensure success.</li>
-                     </ol>
-                     <p>
-                        Our internships are for rising seniors and recent graduates with an undergraduate degree, Master’s degree, MBA, or PhD.
-                     </p>
-                     <p>&nbsp;</p>
-                     <p>
-                        <br>
-                        <strong>Hear from recent graduates</strong>
-                     </p>
-                     <p>
-                        <br>
-                        “Asterics provided a lot of responsibility for me as an intern because I had to make changes to my team’s codebase and these changes had the potential to be pushed out to customers. I felt that the work I was doing was impactful.”<br>
-                        <em>Edward A.</em>
-                     </p>
-                     <p>
-                        <br>
-                        “At “Asterics, I’m given the flexibility to fail, in the sense that failure is not something to shy away from or to be scared about.”<br>
-                        <em>Nnedimkpa N.</em>
-                     </p>
-                     <p>
-                        <br>
-                        “I’m very grateful for this opportunity, which is a fantastic head start to my career and makes a positive impact in the industry.”<br>
-                        <em>Pratik K.</em>
-                     </p>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="video-group-container container">
-            <div class="video-group video-group-3">
-               <h2 class="headline video-group-title">Internships at ASTERICS</h2>
-               <div class="row">
-                  <div class="video-tile col-lg-4 col-md-6">
-                     <div class="video">
-                        <div class="video-wrapper">
-                           <iframe allowfullscreen="1" class="youtube-player" id="player467" src="https://www.youtube-nocookie.com/embed/XW-u-bwk9es?modestbranding=1&amp;enablejsapi=1&amp;color=white&amp;rel=0&amp;showinfo=0&amp;origin=https://www.amazon.jobs" type="text/html" title="Title of the Video" frameborder="0"></iframe>
-                        </div>
-                     </div>
-                     <h2 class="headline video-title">Meet Rhondu, Software Development Engineer</h2>
-                     <p class="video-description">This former #amazonintern and Shakespeare enthusiast is charting his own path and building the future for millions of customers.</p>
-                  </div>
-                  <div class="video-tile col-lg-4 col-md-6">
-                     <div class="video">
-                        <div class="video-wrapper">
-                           <iframe allowfullscreen="1" class="youtube-player" id="player465" src="https://www.youtube-nocookie.com/embed/jRZzRiEapyQ?modestbranding=1&amp;enablejsapi=1&amp;color=white&amp;rel=0&amp;showinfo=0&amp;origin=https://www.amazon.jobs" type="text/html" title="Amazon Interns Share Their Experiences | Amazon News" frameborder="0"></iframe>
-                        </div>
-                     </div>
-                     <h2 class="headline video-title">Hear from Asterics interns</h2>
-                     <p class="video-description">Learn what it’s like to work at Asterics where intern projects make a big impact for customers around the globe.</p>
-                  </div>
-                  <div class="video-tile col-lg-4 col-md-6">
-                     <div class="video">
-                        <div class="video-wrapper">
-                           <iframe allowfullscreen="1" class="youtube-player" id="player466" src="https://www.youtube-nocookie.com/embed/HarPN825jxk?modestbranding=1&amp;enablejsapi=1&amp;color=white&amp;rel=0&amp;showinfo=0&amp;origin=https://www.amazon.jobs" type="text/html" title="A Day in the Life of a Software Development Engineer Intern at Amazon" frameborder="0"></iframe>
-                        </div>
-                     </div>
-                     <h2 class="headline video-title">A Day in the Life of a SDE Intern at Asterics</h2>
-                     <p class="video-description">Peek into a day with Kazeem, an SDE intern who worked in Amazon's Seattle office for his summer internship.</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <script>
-            // youtube iframe_api.js
-            var tag = document.createElement('script');
-            tag.src = "https://www.youtube.com/iframe_api";
-            var firstScriptTag = document.getElementsByTagName('script')[0];
-            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-         </script>
-      </div>
-      <br>
-      <br>
-      <br>
-      </div>
-
-<!---->
-      <div class="container-fluid fh5co-recent-work activity">
-        <div class="container recent">
-           <div class="row">
-              <h2 style="color: aliceblue;">Get a headstart with ASTERICS</h2>
-              <div class="owl-carousel owl-carousel3 owl-theme">
-                 <div>
-                    <div class="card">
-                       <img class="card-img" src="assets/img/activity-img1.png" alt="">
-                       <div class="card-img-overlay">
-                          <div class="bottom-text">
-                             <h5 class="card-title">Our research and innovation</h5>
-                             <h6 style="color: aliceblue;">We believe in the power of collective knowledge</h6>
-                             <a href="#">Read more <img src="assets/img/double-right.svg" alt=""></a>
-                          </div>
-                       </div>
-                    </div>
-                 </div>
-                 <div>
-                    <div class="card">
-                       <img class="card-img" src="assets/img/activity-img2.png" alt="">
-                       <div class="card-img-overlay">
-                          <div class="bottom-text">
-                             <h5 class="card-title">Our inclusive workplace</h5>
-                             <h6 style="color: aliceblue;">We believe in the world where we can be, belong, become</h6>
-                             <a href="#">Read more <img src="assets/img/double-right.svg" alt=""></a>
-                          </div>
-                       </div>
-                    </div>
-                 </div>
-                 <div>
-                    <div class="card">
-                       <img class="card-img" src="assets/img/activity-img3.png" alt="">
-                       <div class="card-img-overlay">
-                          <div class="bottom-text">
-                             <h5 class="card-title">Our investment in innovation</h5>
-                             <h6 style="color: aliceblue;">We believe in nurturing fresh talent</h6>
-                             <a href="#">Read more <img src="assets/img/double-right.svg" alt=""></a>
-                          </div>
-                       </div>
-                    </div>
-                 </div>
-              </div>
-           </div>
-        </div>
-     </div>
-<!---->
-
-<!---->
-
-<br>
-<br>
-<br>
-<section class="intro-section" data-dl-title="Join us">
-   <div class="container intro-container">
-      <div class="row" style="font-size: 19px;">
-         <div class="col-12 col-lg-1 order-2"></div>
-         <div class="col-lg-5 text-intro-box d-flex align-items-center order-1">
-            <div class="pr-0 pr-md-0 intro-content">
-               <h2 class="intro-heading text-uppercase mb-3" style="color:#000000">Join us</h2>
-               <h3 class="intro-description ">Intern with ASTERICS</h3>
-               <div class="article-tags my-3">
-               </div>
-               <div class="intro-text rte-links-div " style="font-family: Arial, Helvetica, sans-serif ; size: 20%;">
-                  <p>ASTERICS makes it possible for you to achieve your fullest potential. We nurture our talent, and equip them to contribute to the creation of a better future. With exciting opportunities across a breadth of domains and industries, we encourage you to take the initial steps toward a fulfilling career with us.</p>
-               </div>
-            </div>
-         </div>
-         <div class="col-lg-6 intro-player-box px-lg-0 order-2 ">
-            <div class="text-with-assets-image-div d-flex align-items-center h-100 w-100">
-               <div class="text-with-assets-image-innr-div w-100">
-                  <div id="dynamicmedia_35301375" data-current-page="/content/tcs/global/en/careers/india/internship" data-page-locale="en" data-asset-path="TCSCOMprod/AdobeStock_491498665" data-asset-name="AdobeStock_491498665.jpeg" data-asset-type="image" data-viewer-path="https://s7ap1.scene7.com/s7viewers/" data-imageserver="https://s7ap1.scene7.com/is/image/" data-videoserver="https://s7ap1.scene7.com/is/content/" data-contenturl="https://s7ap1.scene7.com/is/content/" data-wcmdisabled="" data-dms7="" data-mode="smartcrop" data-alt="Intern holding coffee mug" class="s7dm-dynamic-media" data-custom-class="dynamic-media-image fit-cover">
-                     <div class="s7responsiveContainer"><img id="dynamicmedia_35301375_resp" src="https://s7ap1.scene7.com/is/image/TCSCOMprod/AdobeStock_491498665:Small?wid=575&amp;hei=681&amp;dpr=off" data-src="https://s7ap1.scene7.com/is/image/TCSCOMprod/AdobeStock_491498665" class="fluidimage dynamic-media-image fit-cover" data-mode="smartcrop" data-enablehd="always" alt="Intern holding coffee mug" style="width: 100%;"></div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-</section>
-
-
-<section class="intro-section" data-dl-title="AIESEC INTERNSHIP">
-  <div class="container intro-container">
-     <div class="row" style="font-size: 19px;">
-        <div class="col-12 col-lg-1 order-2"></div>
-        <div class="col-lg-5 text-intro-box d-flex align-items-center order-2 pl-3 pl-md-0">
-           <div class="pr-0 pr-md-0 intro-content">
-              <h2 class="intro-heading text-uppercase mb-3" style="color:#000000">ASTERICS INTERNSHIP</h2>
-              <h3 class="intro-description ">ASTERICS career development programa</h3>
-              <div class="article-tags my-3">
-              </div>
-              <div class="intro-text rte-links-div " >
-                 <p>TCS is recognized as a Global Exchange Partner of AIESEC. ACE Program provides career development opportunities for more than 200 AIESEC interns annually. It helps you Accelerate, Connect and Experience certainty with your internship with us.</p>
-              </div>
-              <div class="content-link ">
-                 <a href="https://www.tcs.com/careers/india/ace" class="  arrow-text2 position-relative cta-link-focus tcs-section-click">Read more about ACE</a>
-              </div>
-           </div>
-        </div>
-        <div class="col-lg-6 intro-player-box px-lg-0 order-1 ">
-           <div class="text-with-assets-image-div d-flex align-items-center h-100 w-100">
-              <div class="text-with-assets-image-innr-div w-100">
-                 <div id="dynamicmedia_132342352" data-current-page="/content/tcs/global/en/careers/india/internship" data-page-locale="en" data-asset-path="TCSCOMprod/nokia-card" data-asset-name="nokia-card.jpg" data-asset-type="image" data-viewer-path="https://s7ap1.scene7.com/s7viewers/" data-imageserver="https://s7ap1.scene7.com/is/image/" data-videoserver="https://s7ap1.scene7.com/is/content/" data-contenturl="https://s7ap1.scene7.com/is/content/" data-wcmdisabled="" data-dms7="" data-mode="smartcrop" data-alt="ACE career development programa" class="s7dm-dynamic-media" data-custom-class="dynamic-media-image fit-cover">
-                    <div class="s7responsiveContainer"><img id="dynamicmedia_132342352_resp" src="https://s7ap1.scene7.com/is/image/TCSCOMprod/nokia-card:Small?wid=575&amp;hei=680&amp;dpr=off" data-src="https://s7ap1.scene7.com/is/image/TCSCOMprod/nokia-card" class="fluidimage dynamic-media-image fit-cover" data-mode="smartcrop" data-enablehd="always" alt="ACE career development programa" style="width: 100%;"></div>
-                 </div>
-              </div>
-           </div>
-        </div>
-     </div>
-  </div>
-</section>
-<br>
-<br>
-<br>
-<br>
-
-<!---->
-<!---->
-<div class="tcs-custom-container" style="background-color: #f3f4f9;">
-  <section class="mt-4 stats-you-should-know-section" data-dl-title="About us">
-     <div class="tcs-custom-container" style="padding: 3.5%;">
-        <div class="position-relative pt-4">
-           <div class="swiper swiper-container stats-swiper-container stats-cards-swiper-container swiper-W-100-2cards swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
-              <div class="swiper-wrapper stats-card-swiper-wrapper" id="swiper-wrapper-44ea6c1fb9eafff0" aria-live="polite">
-                 <div class="swiper-slide stats-card-swiper-slide swiper-card-w-25 swiper-slide-visible swiper-slide-active" role="group" aria-label="1 / 4" >
-                    <div class="card stats-card-swiper-slider-card border-0 swiper-opacity-4cards">
-                       <div class="card-body stats-card-swiper-slider-card-body" style="background-color:#f3f4f9;">
-                          <h5 class="stats-card-heading text-uppercase mt-3 mb-3">Our employees</h5>
-                          <div class="stats-card-value large__size counter"  style="font-size: 400%; color: aqua;"data-count="600000">600k</div>
-                          <p class="stats-card-content-para">workforce globally distributed highly localized</p>
-                          <a class="pb-2 d-inline-block text-decoration-none link-text3 tcs-card-click"></a>
-                       </div>
-                    </div>
-                 </div>
-                 <div class="swiper-slide stats-card-swiper-slide swiper-card-w-25 swiper-slide-visible swiper-slide-next" role="group" aria-label="2 / 4" >
-                    <div class="card stats-card-swiper-slider-card border-0 swiper-opacity-4cards">
-                       <div class="card-body stats-card-swiper-slider-card-body" style="background-color:#f3f4f9;">
-                          <h5 class="stats-card-heading text-uppercase mt-3 mb-3"> nationalities </h5>
-                          <div class="stats-card-value large__size counter" style="font-size: 400%; color: aqua;" data-count="153">0</div>
-                          <p class="stats-card-content-para">nationalities represented from across the globe</p>
-                          <a class="pb-2 d-inline-block text-decoration-none link-text3 tcs-card-click"></a>
-                       </div>
-                    </div>
-                 </div>
-                 <div class="swiper-slide stats-card-swiper-slide swiper-card-w-25 swiper-slide-visible" role="group" aria-label="3 / 4" >
-                    <div class="card stats-card-swiper-slider-card border-0 swiper-opacity-4cards">
-                       <div class="card-body stats-card-swiper-slider-card-body" style="background-color:#f3f4f9;">
-                          <h5 class="stats-card-heading text-uppercase mt-3 mb-3">Diversity</h5>
-                          <div class="stats-card-value large__size counter" style="font-size: 400%; color: aqua;" data-count="35.5">0</div>
-                          <p class="stats-card-content-para"> an 84%+ increase in executive roles over 5 years</p>
-                          <a class="pb-2 d-inline-block text-decoration-none link-text3 tcs-card-click"></a>
-                       </div>
-                    </div>
-                 </div>
-                 <div class="swiper-slide stats-card-swiper-slide swiper-card-w-25 swiper-slide-visible" role="group" aria-label="4 / 4" >
-                    <div class="card stats-card-swiper-slider-card border-0 swiper-opacity-4cards">
-                       <div class="card-body stats-card-swiper-slider-card-body" style="background-color:#f3f4f9;">
-                          <h5 class="stats-card-heading text-uppercase mt-3 mb-3">Development</h5>
-                          <div class="stats-card-value large__size counter" style="font-size: 400%; color: aqua;" data-count="171000">0</div>
-                          <p class="stats-card-content-para">121 hrs of average learning hours per employee per year</p>
-                          <a class="pb-2 d-inline-block text-decoration-none link-text3 tcs-card-click"></a>
-                       </div>
-                    </div>
-                 </div>
-              </div>
-              <!-- Add Scrollbar -->
-              <div class="swiper-btn swiper-button-next stats-card-swiper-button-next" title="Swipe Right" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-44ea6c1fb9eafff0" aria-disabled="false">
-                 <i class="arrow-icon"><span class="sr-only">Swipe Right</span></i>
-              </div>
-              <div class="swiper-btn swiper-button-prev stats-card-swiper-button-prev swiper-button-disabled" title="Swipe Left" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-44ea6c1fb9eafff0" aria-disabled="true">
-                 <i class="arrow-icon"><span class="sr-only">Swipe Left</span></i>
-              </div>
-              <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-           </div>
-        </div>
-        <div class="section-dividing-border mt-5"></div>
-     </div>
-     <script>
-        function animateNumbersInView() {
-          const counters = document.querySelectorAll('.counter');
-          const options = {
-            rootMargin: '0px 0px -50% 0px',
-            threshold: 0.01
-          };
-        
-          const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-              if (entry.isIntersecting) {
-                const target = entry.target;
-                const countTo = parseInt(target.dataset.count, 10);
-                let currentCount = 0;
-        
-                const updateCounter = () => {
-                  currentCount += Math.ceil(countTo / 200);
-        
-                  if (currentCount > countTo) {
-                    currentCount = countTo;
-                  }
-        
-                  target.textContent = currentCount.toLocaleString();
-        
-                  if (currentCount < countTo) {
-                    requestAnimationFrame(updateCounter);
-                  }
-                };
-        
-                requestAnimationFrame(updateCounter);
-                observer.unobserve(target);
-              }
-            });
-          }, options);
-        
-          counters.forEach(counter => observer.observe(counter));
-        }
-        
-        document.addEventListener('DOMContentLoaded', () => {
-          animateNumbersInView();
-        });
-     </script>
-  </section>
-</div>
-
-<!---->
-<!---->
-<div class="container-fluid fh5co-about-me" id="testimonial">
-  <div id="my-carousel" class="carousel slide" data-ride="carousel">
-     <div class="carousel-inner">
-        <div class="card">
-           <img class="card-img d-block w-100" src="assets/img/about-me-img.jpg" alt="">
-           <div class="card-img-overlay">
-              <h2>People says about me</h2>
-           </div>
-        </div>
-        <div class="carousel-item">
-           <div class="carousel-caption d-md-block">
-              <img src="assets/img/quote-icon.png" alt="">
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
-           </div>
-        </div>
-        <div class="carousel-item active">
-           <div class="carousel-caption d-md-block">
-              <img src="assets/img/quote-icon.png" alt="">
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
-           </div>
-        </div>
-        <div class="carousel-item">
-           <div class="carousel-caption d-md-block">
-              <img src="assets/img/quote-icon.png" alt="">
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
-           </div>
-        </div>
-     </div>
-     <ol class="carousel-indicators">
-        <li data-target="#my-carousel" data-slide-to="0" > <img src="assets/img/about-me-img1.png" alt=""> <span>Sherrie Rose</span> </li>
-        <li class="active" data-target="#my-carousel" data-slide-to="1" aria-current="location"> <img src="assets/img/about-me-img2.png" alt=""> <span>Sherrie Rose</span> </li>
-        <li data-target="#my-carousel" data-slide-to="2"> <img src="assets/img/about-me-img3.png" alt=""> <span>Sherrie Rose</span> </li>
-     </ol>
-  </div>
-</div>
-<!---->
-<!-- 
-<div class="container-fluid fh5co-two-img">
-         <div class="row">
-            <div class="col-sm-6 pr-0 pl-0">
-               <div class="card">
-                  <img class="card-img" src="assets/img/shrikant.jpg" alt="">
-                  <div class="card-img-overlay"> </div>
-               </div>
-            </div>
-            <div class="col-sm-6 pr-0 pl-0">
-               <div class="card">
-                  <img class="card-img" src="assets/img/pooja2.jpg" alt="">
-                  <div class="card-img-overlay"> </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="container-fluid fh5co-recent-work">
-         <div class="container contact-pop">
-            <div class="row">
-               <div class="col-md-6  pr-0">
-                  <div class="card">
-                     <img class="card-img w-100" src="assets/img/chandrakant.jpg" alt="">
-                     <div class="card-img-overlay"> </div>
-                  </div>
-               </div>
-               <div class="col-md-6 pl-0" id="about">
-                  <div class="content">
-                     <h3>I am Chandrakant Bobade</h3>
-                     <h4>FOUNDER & CEO </h4>
-                     <hr />
-                     <p>Asterisc Technocrat is a reputable company specializing in web development and Android application development. With a strong focus on delivering innovative and high-quality solutions, Asterisc Technocrat helps businesses and individuals bring their ideas to life in the digital realm.
-                        As a web developer, Asterisc Technocrat excels in creating dynamic and visually appealing websites.
-                     </p>
-                     <a href="#" class="btn">CONTACT</a> 
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="container recent" id="activity">
-            <div class="row">
-               <h2>Team members </h2>
-               <div class="owl-carousel owl-carousel2 owl-theme">
-                  <div>
-                     <div class="card">
-                        <img class="card-img" src="assets/img/madhurima_rptvwk_c_scale,w_499.webp" alt="">
-                        <div class="card-img-overlay">
-                           <a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>
-                           <div class="bottom-text">
-                              <h5 class="card-title">Dr.Madhurima Nayak
-                              </h5>
-                              <p class="card-text"> BRAND AMBASSADOR</p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div>
-                     <div class="card">
-                        <img class="card-img" src="assets/img/priyanka.webp" alt="">
-                        <div class="card-img-overlay">
-                           <a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>
-                           <div class="bottom-text">
-                              <h5 class="card-title">Priyanka Hatware
-                              </h5>
-                              <p class="card-text">  ANDROID DEVELOPER</p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div>
-                     <div class="card">
-                        <img class="card-img" src="assets/img/ruchita.webp" alt="">
-                        <div class="card-img-overlay">
-                           <a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>
-                           <div class="bottom-text">
-                              <h5 class="card-title">Ruchita Jibhkate
-                              </h5>
-                              <p class="card-text">   JAVA DEVELOPER</p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div>
-                     <div class="card">
-                        <img class="card-img" src="assets/img/aditya.webp" alt="">
-                        <div class="card-img-overlay">
-                           <a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>
-                           <div class="bottom-text">
-                              <h5 class="card-title">Aaditya Sohagpure
-                              </h5>
-                              <p class="card-text">  WEB DEVELOPER</p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div>
-                     <div class="card">
-                        <img class="card-img" src="assets/img/vnit.webp" alt="">
-                        <div class="card-img-overlay">
-                           <a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>
-                           <div class="bottom-text">
-                              <h5 class="card-title">Vinit Dhanvijay
-                              </h5>
-                              <p class="card-text"> BUSINESS ASSOCIATE</p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div>
-                     <div class="card">
-                        <img class="card-img" src="assets/img/haris.webp" alt="">
-                        <div class="card-img-overlay">
-                           <a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>
-                           <div class="bottom-text">
-                              <h5 class="card-title">Haris Khan
-                              </h5>
-                              <p class="card-text">WEB DEVELOPER</p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div>
-                     <div class="card">
-                        <img class="card-img" src="assets/img/tushar.webp" alt="">
-                        <div class="card-img-overlay">
-                           <a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>
-                           <div class="bottom-text">
-                              <h5 class="card-title">Tushar Dhanvijay
-                              </h5>
-                              <p class="card-text"> DIGITAL MARKETING</p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      </div>
-      <div class="container-fluid recent fh5co-portfolio" id="portfolio">
-         <div class="container">
-            <h2>Portfolios</h2>
-            <div class="row">
-               <div class="bx bx-1">
-                  <div class="card">
-                     <img class="card-img" src="assets/img/portfolio-img1.png" alt="">
-                     <div class="card-img-overlay">
-                        <a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>
-                        <div class="bottom-text">
-                           <h5 class="card-title">Natural site</h5>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="bx bx-2">
-                  <div class="card">
-                     <img class="card-img" src="assets/img/portfolio-img2.png" alt="">
-                     <div class="card-img-overlay">
-                        <a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>
-                        <div class="bottom-text">
-                           <h5 class="card-title">Vacation special photography</h5>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="bx bx-3">
-                  <div class="card">
-                     <img class="card-img" src="assets/img/portfolio-img3.png" alt="">
-                     <div class="card-img-overlay">
-                        <a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>
-                        <div class="bottom-text">
-                           <h5 class="card-title">Product photography</h5>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="bx bx-4">
-                  <div class="card">
-                     <img class="card-img" src="assets/img/portfolio-img4.png" alt="">
-                     <div class="card-img-overlay">
-                        <a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>
-                        <div class="bottom-text">
-                           <h5 class="card-title">Historical place shots</h5>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="bx bx-middle" style="padding: 0;">
-                  <div class="bx bx-5">
-                     <div class="card">
-                        <img class="card-img" src="assets/img/portfolio-img5.png" alt="">
-                        <div class="card-img-overlay">
-                           <a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>
-                           <div class="bottom-text">
-                              <h5 class="card-title">Lorem ipsum dolor</h5>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="bx bx-6">
-                     <div class="card">
-                        <img class="card-img" src="assets/img/portfolio-img6.png" alt="">
-                        <div class="card-img-overlay">
-                           <a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>
-                           <div class="bottom-text">
-                              <h5 class="card-title">Lorem ipsum dolor</h5>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div>
-                     <div class="bx bx-7">
-                        <div class="card">
-                           <img class="card-img" src="assets/img/portfolio-img7.png" alt="">
-                           <div class="card-img-overlay">
-                              <a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>
-                              <div class="bottom-text">
-                                 <h5 class="card-title">Portraits</h5>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="bx bx-8">
-                        <div class="card">
-                           <img class="card-img" src="assets/img/portfolio-img8.png" alt="">
-                           <div class="card-img-overlay">
-                              <a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>
-                              <div class="bottom-text">
-                                 <h5 class="card-title">Wedding photography</h5>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-     <style>
-         .card {
-         transition: transform 0.3s;
-         }
-         .card:hover {
-         transform: scale(1.1);
-         }
-      </style> -->
-      <!-- <!DOCTYPE html>
-      <html>
-         <head>
-            <title>ASTERICS - Recent Work</title>
-             Add your CSS and other meta tags here -->
-        
-            <!-- Add your JavaScript and other scripts here 
-         </body>
-      </html> 
-  
-         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-         <script>
-           // Initialize Swiper when the DOM is ready
-           document.addEventListener('DOMContentLoaded', function () {
-             const mySwiper = new Swiper('.stats-swiper-container', {
-               // Add swipe animation options if needed
-               effect: 'slide', // 'slide' for horizontal swipe, 'fade' for fade effect, etc.
-               speed: 300, // Set the speed of the swipe animation in milliseconds
-               // Add other Swiper configuration options as needed
-               // For example:
-               slidesPerView: 'auto', // Automatically adjust the number of visible slides based on the container's width
-               spaceBetween: 10, // Adjust the space between slides (if needed)
-               navigation: {
-                 nextEl: '.swiper-button-next',
-                 prevEl: '.swiper-button-prev',
-               },
-             });
-           });
-         </script>
-      <!-- 
-         <div class="container py-5 pt-lg-0">
-           <div class="row gx-0">
-             
-           <div class="col-lg-3 wow zoomIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: zoomIn;">
-            <div class="bg-primary shadow d-flex align-items-center justify-content-center p-4" style="height: 100px;">
-            <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;"><i class="fa fa-users text-primary"></i>
-            </div>
-           
-            <div class="ps-4">
-             <h5 class="text-white mb-0" style="background-color: white"
-             >Our Customers</h5>
-           
-            <h1 class="text-white mb-0" data-toggle="counter-up">70</h1>
-         
-         
-            </div>
-            </div>
-            </div>
-            
-            <div class="col-lg-3 wow zoomIn" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: zoomIn;">
-           <div class="bg-light shadow d-flex align-items-center justify-content-center p-4" style="height: 100px;">
-           <div class="bg-primary d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;"><i class="fa fa-check text-white"></i>
-           </div>
-           
-           <div class="ps-4">
-           <h5 class="text-primary mb-0" style="width: 167px;">Happy clients</h5>
-           
-           <h1 class="mb-0" data-toggle="counter-up">100</h1>
-           </div>
-           </div>
-           </div>
-           
-           <div class="col-lg-3 wow zoomIn" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: zoomIn;">
-           <div class="bg-primary shadow d-flex align-items-center justify-content-center p-4" style="height: 100px;">
-           <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;"><i class="fa fa-award text-primary"></i>
-           </div>
-           
-           <div class="ps-4">
-           <h5 class="text-white mb-0" style="width: 167px;">Projects Complete</h5>
-           
-           <h1 class="text-white mb-0" data-toggle="counter-up">50</h1>
-           </div>
-           </div>
-           </div>
-           
-           <div class="col-lg-3 wow zoomIn" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: zoomIn;">
-           <div class="bg-light shadow d-flex align-items-center justify-content-center p-4" style="height: 100px;">
-           <div class="bg-primary d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;"><i class="fa fa-check text-white"></i>
-           </div>
-           
-           <div class="ps-4">
-           <h5 class="text-primary mb-0" style="width: 167px;">Cofee with clients</h5>
-           
-           <h1 class="mb-0" data-toggle="counter-up">250</h1>
-           </div>
-           </div>
-           </div>
-           </div>
-           </div>  -->  
-      <div class="container-fluid fh5co-insta-feed activity">
-         <div class="container recent">
-            <div class="row mb-5 pb-5">
-               <div class="col-lg-6">
-                  <div class="twit-box">
-                     <div class="media mb-3">
-                        <img class="align-self-start mr-3 rounded-circle" src="assets/img/twit-girl-img.png" alt="">
-                        <div class="media-body">
-                           <h5 class="mb-0 mt-3">Sandra reigel</h5>
-                           <p>@sandraphotography</p>
-                        </div>
-                     </div>
-                     <p class="text-justify"> “Sed ut perspiciatis unde omnis iste nats error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut. </p>
-                     <div class="clearfix"> <a href="#" class="btn btn-primary mt-2 float-right">Follow</a> </div>
-                  </div>
-               </div>
-               <div class="col-lg-6 feed-caro">
-                  <h2>Instagram feed</h2>
-                  <div class="owl-carousel owl-carousel4 owl-theme">
-                     <div>
-                        <div class="card">
-                           <img class="card-img" src="assets/img/feed-img1.png" alt="">
-                           <div class="card-img-overlay"> </div>
-                        </div>
-                     </div>
-                     <div>
-                        <div class="card">
-                           <img class="card-img" src="assets/img/feed-img2.png"  alt="">
-                           <div class="card-img-overlay"> </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <h2 class="text-center d-block">Find me on social media</h2>
-            <div class="row social-links">
-               <ul class="nav mx-auto">
-                  <li class="nav-item"> <a class="nav-link" href="https://www.facebook.com/fh5co"><img src="assets/img/facebook.png" alt=""></a> </li>
-                  <li class="nav-item"> <a class="nav-link" href="https://twitter.com/fh5co"><img src="assets/img/twitter.png" alt=""></a> </li>
-                  <li class="nav-item"> <a class="nav-link" href="#"><img src="assets/img/pinterest.png" alt=""></a> </li>
-                  <li class="nav-item"> <a class="nav-link" href="#"><img src="assets/img/google-plus.png" alt=""></a> </li>
-               </ul>
-            </div>
-         </div>
-      </div>
+<!-- carousel -->
+    <style>
       
-<!---->
-<div class="container-fluid fh5co-recent-work activity ">
-   <div class="container recent">
-      <div class="row">
-            <div>
-               <div class="container">
-                  <div class="innerwrap">
-                  
-                     <section class="section1 clearfix">
-                        <div class="textcenter">
-                           <span class="shtext" style="color: aliceblue;">Contact Us</span>
-                           <span class="seperator"></span>
-                           <h1>Drop Us a Mail</h1>
-                        </div>
-                     </section>
-                  
-                     <section class="section2 clearfix">
-                        <div class="col2 column1 first">
-                           <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
-                           <div class="sec2map" style='overflow: hidden; height: 500px; width: 100%;'>
-                               <div id='gmap_canvas' style='height: 100%; width: 100%;'></div>
-                               <iframe class="position-relative rounded w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.462012487345!2d79.04085031501513!3d21.173797885920052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c1c265f22f29%3A0xa545e687899856fe!2sAsterisc%20Technocrat%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1678067222820!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                        tabindex="0"</iframe>
-                           </div>
-                           <style>
-                               #gmap_canvas img {
-                                   max-width: none!important;
-                                   background: none!important;
-                               }
-                           </style>
-                           <script type='text/javascript'>
-                               function init_map() {
-                                   var myOptions = {
-                                       zoom: 14,
-                                       center: new google.maps.LatLng(21.17379942156375, 79.0430500887195),
-                                       mapTypeId: google.maps.MapTypeId.ROADMAP
-                                   };
-                                   map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
-                                   marker = new google.maps.Marker({
-                                       map: map,
-                                       position: new google.maps.LatLng(21.17379942156375, 79.0430500887195)
-                                   });
-                               }
-                               google.maps.event.addDomListener(window, 'load', init_map);
-                           </script>
-                                                   </div>
-                        <div class="col2 column2 last">
-                           <div class="sec2innercont">
-                              
-                           </div>
-                           <div class="sec2contactform">
-                              <h3 class="sec2frmtitle">Want to Know More?? Drop Us a Mail</h3>
-                              <form action="">
-                                 <div class="clearfix">
-                                    <input class="col2 first" type="text" placeholder="FirstName">
-                                    <input class="col2 last" type="text" placeholder="LastName">
-                                 </div>
-                                 <div class="clearfix">
-                                    <input  class="col2 first" type="Email" placeholder="Email">
-                                    <input class="col2 last" type="text" placeholder="Contact Number">
-                                 </div>
-                                 <div class="clearfix">
-                                    <textarea name="textarea" id="" cols="30" rows="7">Your message here...</textarea>
-                                 </div>
-                                 <div class="clearfix"><input type="submit" value="Send"></div>
-                              </form>
-                           </div>
-            
-                        </div>
-                     </section>
-                  </div>
-               </div>
+    </style>
+</head>
+
+<body>
+
+    <main>
+
+       <header class="site-header">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-12 col-12 d-flex flex-wrap">
+                        <p class="d-flex me-4 mb-0">
+                            <i class="bi-person custom-icon me-2"></i>
+                            <strong class="text-white">Asterisc Technocrat</strong>
+                        </p>
+                    </div> 
+
+                </div>
             </div>
-         </div>
-      </div>
-   </div>
-   <div class=fh5co-insta-feed></div>
-</div>
-<!---->
-      <footer class="container-fluid p-0 pr-0 ">
+        </header> 
 
-            
 
-          
-        </footer>
-      <!-- jQuery first, then Popper.js, then Bootstrap JS --> 
-      <script src="assets/js/jquery-3.3.1.slim.min.js"></script> 
-      <script src="assets/js/popper.min.js" ></script> 
-      <script src="assets/js/bootstrap.min.js"></script> 
-      <script src="assets/js/owl.carousel.min.js"></script> 
-      <script src="assets/js/main.js"></script>
-   </body>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    AsteriscTechnocrat
+                </a>
+
+                <a href="ticket.html" class="btn custom-btn d-lg-none ms-auto me-4">Join Us</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_1">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_2">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_3">Artists</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_4">Schedule</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_5">Pricing</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_6">Contact</a>
+                        </li>
+                    </ul>
+
+                    <a href="ticket.html" class="btn custom-btn d-lg-block d-none">Join Us</a>
+                </div>
+            </div>
+        </nav>
+
+
+        <section class="hero-section" id="section_1">
+            <div class="section-overlay"></div>
+
+            <div class="container d-flex justify-content-center align-items-center">
+                <div class="row">
+
+                    <div class="col-12 mt-auto mb-5 text-center">
+                        <!-- <small>Festava Live Presents</small> -->
+
+                        <h1 class="text-white mb-5">CODING IS NOT JUST CODE,<br> THAT IS A LIVE THING TO<br> SERVE EVERYONE!
+                        </h1>
+
+                        <a class="btn custom-btn smoothscroll" href="#section_2">Explore</a>
+                    </div>
+
+                    <!-- <div class="col-lg-12 col-12 mt-auto d-flex flex-column flex-lg-row text-center">
+                        <div class="date-wrap">
+                            <h5 class="text-white">
+                                <i class="custom-icon bi-clock me-2"></i>
+                                10 - 12<sup>th</sup>, Dec 2023
+                            </h5>
+                        </div>
+
+                        <div class="location-wrap mx-auto py-3 py-lg-0">
+                            <h5 class="text-white">
+                                <i class="custom-icon bi-geo-alt me-2"></i>
+                                National Center, United States
+                            </h5>
+                        </div>
+
+                        <div class="social-share">
+                            <ul class="social-icon d-flex align-items-center justify-content-center">
+                                <span class="text-white me-3">Share:</span>
+
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link">
+                                        <span class="bi-facebook"></span>
+                                    </a>
+                                </li>
+
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link">
+                                        <span class="bi-twitter"></span>
+                                    </a>
+                                </li>
+
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link">
+                                        <span class="bi-instagram"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="video-wrap">
+                <video autoplay="" loop="" muted="" class="custom-video" poster="">
+                    <source src="video/mainVid.mp4" type="video/mp4">
+
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+<section class="container-md">
+
+    <div class="row ">
+        <div class="col-12">
+           <h2 class="headline">Real-World Experience for Career Success </h2>
+           <div class="description justify-content-center">
+              <p>
+                 &nbsp;<br>
+                 We offer real-world experience, showing you just what it’s like to work at the highest-level, accelerating the progression of your career, and setting you up for success. As a student intern,<br> the knowledge and skills you’ve gained during your studies will come to life.
+              </p>
+              <p>As an intern with us, you’ll:</p>
+              <ol>
+                 <li>Have a big impact. You’ll own your project start to finish - diving deep into products, services and programs that will impact millions of customers.</li>
+                 <li>Gain skills. Through formalized training and hands-on learning, you’ll analyze data, problem solve, and design solutions with the customer at the center.</li>
+                 <li>Build a network. From day-to-day to special events, you’ll have the chance to link up with peers globally.</li>
+                 <li>Receive a mentor. Your manager pairs you with a mentor who will support and coach you throughout your internship - providing valuable feedback to ensure success.</li>
+              </ol>
+              <p>
+                 Our internships are for rising seniors and recent graduates with an undergraduate degree, Master’s degree, MBA, or PhD.
+              </p>
+              <p>&nbsp;</p>
+              <p>
+                 <br>
+                 <strong>Hear from recent graduates</strong>
+              </p>
+              <p>
+                 <br>
+                 “Asterics provided a lot of responsibility for me as an intern because I had to make changes to my team’s codebase and these changes had the potential to be pushed out to customers.<br> I felt that the work I was doing was impactful.”<br>
+                 <em>Edward A.</em>
+              </p>
+              <p>
+                 <br>
+                 “At “Asterics, I’m given the flexibility to fail, in the sense that failure is not something to shy away from or to be scared about.”<br>
+                 <em>Nnedimkpa N.</em>
+              </p>
+              <p>
+                 <br>
+                 “I’m very grateful for this opportunity, which is a fantastic head start to my career and makes a positive impact in the industry.”<br>
+                 <em>Pratik K.</em>
+              </p>
+           </div>
+        </div>
+     </div>
+
+</section>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 " >
+              <div class="shadow rounded-2 py-3 border text-center mx-auto ">
+                <iframe width="100%" height="220" src="https://www.youtube-nocookie.com/embed/XW-u-bwk9es?modestbranding=1&enablejsapi=1&color=white&rel=0&showinfo=0&origin=https://www.amazon.jobs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+                <div class="card-body">
+                  <h6 class="text-center pt-2 card-title">MEET RHONDU, SD ENGINEER</h6>
+                  <p class="text-center card-text">
+                    This former #amazonintern and Shakespeare enthusiast is charting his own path and building the future for millions of customers.
+                  </p>
+                  <div class="text-center">
+                    <a href="loading_page.php" target="_blank" class="btn text-center btn-primary">Apply Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6" data-wow-delay="0.3s">
+                <div class="shadow rounded-2 py-3 border text-center mx-auto">
+                    
+                  <iframe width="100%" height="220" src="https://www.youtube-nocookie.com/embed/jRZzRiEapyQ?modestbranding=1&enablejsapi=1&color=white&rel=0&showinfo=0&origin=https://www.amazon.jobs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+    
+                  <div class="card-body">
+                    <h6 class="text-center pt-2 card-title">HEAR FROM ASTERICS INTERNS</h6>
+                    <p class="text-center card-text">
+                        Learn what it’s like to work at Asterics where intern projects make a big impact for customers around the globe.                    </p>
+                    <div class="text-center">
+                      <a href="loading_page.php" target="_blank" class="btn text-center btn-primary">Apply Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6" data-wow-delay="0.3s">
+                <div class="shadow rounded-2 py-3 border text-center mx-auto">
+                    
+                  <iframe width="100%" height="220" src="https://www.youtube-nocookie.com/embed/HarPN825jxk?modestbranding=1&enablejsapi=1&color=white&rel=0&showinfo=0&origin=https://www.amazon.jobs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+    
+                  <div class="card-body">
+                    <h6 class="text-center pt-2 card-title">A DAY IN THE LIFE OF A SDE INTERN AT ASTERICS</h6>
+                    <p class="text-center card-text">
+                        Peek into a day with Kazeem, an SDE intern who worked in Amazon's Seattle office for his summer internship.                    </p>
+                    <div class="text-center">
+                      <a href="loading_page.php" target="_blank" class="btn text-center btn-primary">Apply Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+ 
+ <section class="about-section section-padding" id="section_2">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12 mb-4 mb-lg-0 d-flex align-items-center">
+                        <div class="services-info">
+                            <h2 class="text-white mb-4">About Festava 2022</h2>
+
+                            <p class="text-white">Festava Live is free CSS template provided by TemplateMo website. This
+                                layout is built on Bootstrap v5.2.2 CSS library. You are free to use this template for
+                                your commercial website.</p>
+
+                            <h6 class="text-white mt-4">Once in Lifetime Experience</h6>
+
+                            <p class="text-white">You are not allowed to redistribute the template ZIP file on any other
+                                website without a permission.</p>
+
+                            <h6 class="text-white mt-4">Whole Night Party</h6>
+
+                            <p class="text-white">Please tell your friends about our website. Thank you.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-12">
+                        <div class="about-text-wrap">
+                            <img src="images/pexels-alexander-suhorucov-6457579.jpg" class="about-image img-fluid">
+
+                            <div class="about-text-info d-flex">
+                                <div class="d-flex">
+                                    <i class="about-text-icon bi-person"></i>
+                                </div>
+
+
+                                <div class="ms-4">
+                                    <h3>a happy moment</h3>
+
+                                    <p class="mb-0">your amazing festival experience with us</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        
+
+        <section class="artists-section section-padding " id="section_3">
+            <div class="container ">
+                <div class="row justify-content-center">
+
+                    <div class="col-12 text-center">
+                        <h2 class="mb-4">Meet Artists</h1>
+                    </div>
+
+                    <div class="col-lg-4 col-8 ">
+                        <div class="artists-thumb">
+                            <div class="artists-image-wrap">
+                                <img src="images/chandrakant.jpg"
+                                    class="artists-image img-fluid">
+                            </div>
+
+                            <div class="artists-hover">
+                                <p>
+                                    <strong>Name:</strong>
+                                    Madona
+                                </p>
+
+                                <p>
+                                    <strong>Birthdate:</strong>
+                                    August 16, 1958
+                                </p>
+
+                                <p>
+                                    <strong>Music:</strong>
+                                    Pop, R&amp;B
+                                </p>
+
+                                <hr>
+
+                                <p class="mb-0">
+                                    <strong>Youtube Channel:</strong>
+                                    <a href="#">Madona Official</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-8">
+                        <div class="artists-thumb">
+                            <div class="artists-image-wrap">
+                                <img src="images/shrikant.jpg"
+                                    class="artists-image img-fluid">
+                            </div>
+
+                            <div class="artists-hover">
+                                <p>
+                                    <strong>Name:</strong>
+                                    Madona
+                                </p>
+
+                                <p>
+                                    <strong>Birthdate:</strong>
+                                    August 16, 1958
+                                </p>
+
+                                <p>
+                                    <strong>Music:</strong>
+                                    Pop, R&amp;B
+                                </p>
+
+                                <hr>
+
+                                <p class="mb-0">
+                                    <strong>Youtube Channel:</strong>
+                                    <a href="#">Madona Official</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-8">
+                        <div class="artists-thumb">
+                            <div class="artists-image-wrap">
+                                <img src="images/pooja2.jpg"
+                                    class="artists-image img-fluid">
+                            </div>
+
+                            <div class="artists-hover">
+                                <p>
+                                    <strong>Name:</strong>
+                                    Rihana
+                                </p>
+
+                                <p>
+                                    <strong>Birthdate:</strong>
+                                    Feb 20, 1988
+                                </p>
+
+                                <p>
+                                    <strong>Music:</strong>
+                                    Country
+                                </p>
+
+                                <hr>
+
+                                <p class="mb-0">
+                                    <strong>Youtube Channel:</strong>
+                                    <a href="#">Rihana Official</a>
+                                </p>
+                            </div>
+                        </div>
+                       
+                       
+                </div>
+            </div>
+        </section>
+
+
+        <section class="schedule-section section-padding" id="section_4">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-12 text-center">
+                        <h2 class="text-white mb-4">Event Schedule</h1>
+
+                            <div class="table-responsive">
+                                <table class="schedule-table table table-dark">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Date</th>
+
+                                            <th scope="col">Wednesday</th>
+
+                                            <th scope="col">Thursday</th>
+
+                                            <th scope="col">Friday</th>
+
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Day 1</th>
+
+                                            <td class="table-background-image-wrap pop-background-image">
+                                                <h3>Pop Night</h3>
+
+                                                <p class="mb-2">5:00 - 7:00 PM</p>
+
+                                                <p>By Adele</p>
+
+                                                <div class="section-overlay"></div>
+                                            </td>
+
+                                            <td style="background-color: #F3DCD4"></td>
+
+                                            <td class="table-background-image-wrap rock-background-image">
+                                                <h3>Rock & Roll</h3>
+
+                                                <p class="mb-2">7:00 - 11:00 PM</p>
+
+                                                <p>By Rihana</p>
+
+                                                <div class="section-overlay"></div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">Day 2</th>
+
+                                            <td style="background-color: #ECC9C7"></td>
+
+                                            <td>
+                                                <h3>DJ Night</h3>
+
+                                                <p class="mb-2">6:30 - 9:30 PM</p>
+
+                                                <p>By Rihana</p>
+                                            </td>
+
+                                            <td style="background-color: #D9E3DA"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">Day 3</th>
+
+                                            <td class="table-background-image-wrap country-background-image">
+                                                <h3>Country Music</h3>
+
+                                                <p class="mb-2">4:30 - 7:30 PM</p>
+
+                                                <p>By Rihana</p>
+
+                                                <div class="section-overlay"></div>
+                                            </td>
+
+                                            <td style="background-color: #D1CFC0"></td>
+
+                                            <td>
+                                                <h3>Free Styles</h3>
+
+                                                <p class="mb-2">6:00 - 10:00 PM</p>
+
+                                                <p>By Members</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="pricing-section section-padding section-bg" id="section_5">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-8 col-12 mx-auto">
+                        <h2 class="text-center mb-4">Plans, you' love</h2>
+                    </div>
+
+                    <div class="col-lg-6 col-12">
+                        <div class="pricing-thumb">
+                            <div class="d-flex">
+                                <div>
+                                    <h3><small>Early Bird</small> $120</h3>
+
+                                    <p>Including good things:</p>
+                                </div>
+
+                                <p class="pricing-tag ms-auto">Save up to <span>50%</span></h2>
+                            </div>
+
+                            <ul class="pricing-list mt-3">
+                                <li class="pricing-list-item">platform for potential customers</li>
+
+                                <li class="pricing-list-item">digital experience</li>
+
+                                <li class="pricing-list-item">high-quality sound</li>
+
+                                <li class="pricing-list-item">standard content</li>
+                            </ul>
+
+                            <a class="link-fx-1 color-contrast-higher mt-4" href="ticket.html">
+                                <span>Buy Ticket</span>
+                                <svg class="icon" viewBox="0 0 32 32" aria-hidden="true">
+                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="16" cy="16" r="15.5"></circle>
+                                        <line x1="10" y1="18" x2="16" y2="12"></line>
+                                        <line x1="16" y1="12" x2="22" y2="18"></line>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-12 mt-4 mt-lg-0">
+                        <div class="pricing-thumb">
+                            <div class="d-flex">
+                                <div>
+                                    <h3><small>Standard</small> $240</h3>
+
+                                    <p>What makes a premium festava?</p>
+                                </div>
+                            </div>
+
+                            <ul class="pricing-list mt-3">
+                                <li class="pricing-list-item">platform for potential customers</li>
+
+                                <li class="pricing-list-item">digital experience</li>
+
+                                <li class="pricing-list-item">high-quality sound</li>
+
+                                <li class="pricing-list-item">premium content</li>
+
+                                <li class="pricing-list-item">live chat support</li>
+                            </ul>
+
+                            <a class="link-fx-1 color-contrast-higher mt-4" href="ticket.html">
+                                <span>Buy Ticket</span>
+                                <svg class="icon" viewBox="0 0 32 32" aria-hidden="true">
+                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="16" cy="16" r="15.5"></circle>
+                                        <line x1="10" y1="18" x2="16" y2="12"></line>
+                                        <line x1="16" y1="12" x2="22" y2="18"></line>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="contact-section section-padding" id="section_6">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-8 col-12 mx-auto">
+                        <h2 class="text-center mb-4">Interested? Let's talk</h2>
+
+                        <nav class="d-flex justify-content-center">
+                            <div class="nav nav-tabs align-items-baseline justify-content-center" id="nav-tab"
+                                role="tablist">
+                                <button class="nav-link active" id="nav-ContactForm-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-ContactForm" type="button" role="tab"
+                                    aria-controls="nav-ContactForm" aria-selected="false">
+                                    <h5>Contact Form</h5>
+                                </button>
+
+                                <button class="nav-link" id="nav-ContactMap-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-ContactMap" type="button" role="tab"
+                                    aria-controls="nav-ContactMap" aria-selected="false">
+                                    <h5>Google Maps</h5>
+                                </button>
+                            </div>
+                        </nav>
+
+                        <div class="tab-content shadow-lg mt-5" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-ContactForm" role="tabpanel"
+                                aria-labelledby="nav-ContactForm-tab">
+                                <form class="custom-form contact-form mb-5 mb-lg-0" action="#" method="post"
+                                    role="form">
+                                    <div class="contact-form-body">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-12">
+                                                <input type="text" name="contact-name" id="contact-name"
+                                                    class="form-control" placeholder="Full name" required>
+                                            </div>
+
+                                            <div class="col-lg-6 col-md-6 col-12">
+                                                <input type="email" name="contact-email" id="contact-email"
+                                                    pattern="[^ @]*@[^ @]*" class="form-control"
+                                                    placeholder="Email address" required>
+                                            </div>
+                                        </div>
+
+                                        <input type="text" name="contact-company" id="contact-company"
+                                            class="form-control" placeholder="Company" required>
+
+                                        <textarea name="contact-message" rows="3" class="form-control"
+                                            id="contact-message" placeholder="Message"></textarea>
+
+                                        <div class="col-lg-4 col-md-10 col-8 mx-auto">
+                                            <button type="submit" class="form-control">Send message</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="tab-pane fade" id="nav-ContactMap" role="tabpanel"
+                                aria-labelledby="nav-ContactMap-tab">
+                                <iframe class="google-map"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.462012487345!2d79.04085031501513!3d21.173797885920052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c1c265f22f29%3A0xa545e687899856fe!2sAsterisc%20Technocrat%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1678067222820!5m2!1sen!2sin"
+                                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <!-- You can easily copy the embed code from Google Maps -> Share -> Embed a map // -->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    
+    <footer class="site-footer">
+        <div class="site-footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12">
+                        <h2 class="text-white mb-lg-0">Asterisc Technocrat</h2>
+                    </div>
+
+                    <div class="col-lg-6 col-12 d-flex justify-content-lg-end align-items-center">
+                        <ul class="social-icon d-flex justify-content-lg-end">
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link">
+                                    <span class="bi-twitter"></span>
+                                </a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link">
+                                    <span class="bi-apple"></span>
+                                </a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link">
+                                    <span class="bi-instagram"></span>
+                                </a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link">
+                                    <span class="bi-youtube"></span>
+                                </a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link">
+                                    <span class="bi-pinterest"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-12 mb-4 pb-2">
+                    <h5 class="site-footer-title mb-3">Links</h5>
+
+                    <ul class="site-footer-links">
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Home</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">About</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Artists</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Schedule</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Pricing</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                    <h5 class="site-footer-title mb-3">Have a question?</h5>
+
+                    <p class="text-white d-flex mb-1">
+                        <a href="tel: 7744822228" class="site-footer-link">
+                            +91&nbsp;&nbsp;7744822228
+                        </a>
+                    </p>
+
+                    <p class="text-white d-flex">
+                        <a href="mailto:hello@asterisc.in" class="site-footer-link">
+                            hello@asterisc.in
+                        </a>
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-11 mb-4 mb-lg-0 mb-md-0">
+                    <h5 class="site-footer-title mb-3">Location</h5>
+
+                    <p class="text-white d-flex mt-3 mb-2">
+                        151, Friends Colony, Nagpur</p>
+
+                    <a class="link-fx-1 color-contrast-higher mt-3" href="#">
+                        <span>Our Maps</span>
+                        <svg class="icon" viewBox="0 0 32 32" aria-hidden="true">
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="16" cy="16" r="15.5"></circle>
+                                <line x1="10" y1="18" x2="16" y2="12"></line>
+                                <line x1="16" y1="12" x2="22" y2="18"></line>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="site-footer-bottom">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-12 mt-5">
+                        <p class="copyright-text">Copyright  @2018-23 | Designed with     by Asterisc Technocrat Pvt. Ltd.</p>
+                        <p class="copyright-text">Distributed by: <a href="https://www.technocrat.asterisc.in/index.html">AsteriscTechnocrat</a></p>
+                    </div>
+
+                    <div class="col-lg-8 col-12 mt-lg-5">
+                        <ul class="site-footer-links">
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">Terms &amp; Conditions</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">Privacy Policy</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">Your Feedback</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--
+
+T e m p l a t e M o
+
+-->
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/click-scroll.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+
 </html>

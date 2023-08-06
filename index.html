@@ -23,10 +23,137 @@
 
     <link href="css/templatemo-festava-live.css" rel="stylesheet">
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 <!-- carousel -->
     <style>
-      
+/*  Counter Section  */
+
+#counter {    
+    background-color: #ffffff;
+    color: #c0c0c0;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    padding: 100px 0;
+}
+#counter .count {
+    padding: 30px;
+    background: #cccccc;
+    color: #fff;
+    text-align: center;
+}
+.count h4 {
+    /* color: #800080; */
+	font-size: 16px;
+	margin-top: 0;
+}
+#counter .count .fa {
+    font-size: 40px;
+    display: block;
+    color: #fff;
+}
+#counter .number {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+}
+/*  Pricing Section  */
+
+#pricing {
+    background: #f7f7f7;
+}
+.pricing-items {
+    padding-top: 50px;
+}
+.pricing-item {
+    background: #fff;
+    position: relative;
+    box-shadow: 0 0 9px 0 rgba(130, 121, 121, .2);
+    padding: 50px 0px;
+    border-top-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+}
+.pricing-item.active {
+    top: -50px;
+}
+.price-list li {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.price-list .price {
+    font-size: 30px;
+    font-weight: bold;
+}
+.pricing-item .ribbon {
+    margin: -50px 0 20px;
+    display: block;
+    background-color: #ffb400;
+    padding: 15px 0 2px;
+    opacity: 0.8;
+    border-top-right-radius: 2em;
+}
+.pricing-item:hover .ribbon {
+    background-color: #ffb400;
+	opacity: 1;
+}
+.pricing-item.active .ribbon {
+    background-color: #ffb400;
+	opacity: 1;
+}
+.pricing-item .ribbon p {
+    color: #fff;
+    font-size: 22px;
+    margin: 0 0 10px;
+    font-weight: 600;
+}
+.pricing-item.active .price-list li, .pricing-item:hover .price-list li {
+    color: #848181;;
+}
+ul.price-list {
+    margin-bottom: 30px;
+    padding: 0;
+}
+.btn-price {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 14px 40px;
+    -webkit-border-radius: 26px;
+    -moz-border-radius: 26px;
+    -o-border-radius: 26px;
+    border-radius: 26px;
+    border: 1px solid #848181;
+    background-color: transparent;
+    color: #848181;
+}
+.pricing-item:hover .btn-price,
+.active .btn-price {
+    border: 1px solid #ffb400;
+    background-color: #ffb400;
+    color: #fff;
+}
+.btn-price:focus {
+    background-color: transparent;
+    text-decoration: none;
+}
+@media only screen and (max-width: 767px) {
+    .pricing-items {
+        padding-top: 0;
+    }
+    .pricing-item.active {
+        top: 20px;
+        margin-bottom: 40px;
+    }
+}
+
     </style>
+ 
+ <style>
+
+ </style>
 </head>
 
 <body>
@@ -36,14 +163,12 @@
        <header class="site-header">
             <div class="container">
                 <div class="row">
-
                     <div class="col-lg-12 col-12 d-flex flex-wrap">
                         <p class="d-flex me-4 mb-0">
                             <i class="bi-person custom-icon me-2"></i>
                             <strong class="text-white">Asterisc Technocrat</strong>
                         </p>
                     </div> 
-
                 </div>
             </div>
         </header> 
@@ -205,60 +330,75 @@
         </div>
      </div>
 
+    
 </section>
 
-        <div class="row">
-            <div class="col-lg-4 col-md-6 " >
-              <div class="shadow rounded-2 py-3 border text-center mx-auto ">
+
+    <section class="articles">
+
+        <article>
+          <div class="article-wrapper">
+            <figure>
                 <iframe width="100%" height="220" src="https://www.youtube-nocookie.com/embed/XW-u-bwk9es?modestbranding=1&enablejsapi=1&color=white&rel=0&showinfo=0&origin=https://www.amazon.jobs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
-                <div class="card-body">
-                  <h6 class="text-center pt-2 card-title">MEET RHONDU, SD ENGINEER</h6>
-                  <p class="text-center card-text">
-                    This former #amazonintern and Shakespeare enthusiast is charting his own path and building the future for millions of customers.
-                  </p>
-                  <div class="text-center">
-                    <a href="loading_page.php" target="_blank" class="btn text-center btn-primary">Apply Now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-  
-            <div class="col-lg-4 col-md-6" data-wow-delay="0.3s">
-                <div class="shadow rounded-2 py-3 border text-center mx-auto">
-                    
-                  <iframe width="100%" height="220" src="https://www.youtube-nocookie.com/embed/jRZzRiEapyQ?modestbranding=1&enablejsapi=1&color=white&rel=0&showinfo=0&origin=https://www.amazon.jobs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
-    
-                  <div class="card-body">
-                    <h6 class="text-center pt-2 card-title">HEAR FROM ASTERICS INTERNS</h6>
-                    <p class="text-center card-text">
-                        Learn what it’s like to work at Asterics where intern projects make a big impact for customers around the globe.                    </p>
-                    <div class="text-center">
-                      <a href="loading_page.php" target="_blank" class="btn text-center btn-primary">Apply Now</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6" data-wow-delay="0.3s">
-                <div class="shadow rounded-2 py-3 border text-center mx-auto">
-                    
-                  <iframe width="100%" height="220" src="https://www.youtube-nocookie.com/embed/HarPN825jxk?modestbranding=1&enablejsapi=1&color=white&rel=0&showinfo=0&origin=https://www.amazon.jobs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
-    
-                  <div class="card-body">
-                    <h6 class="text-center pt-2 card-title">A DAY IN THE LIFE OF A SDE INTERN AT ASTERICS</h6>
-                    <p class="text-center card-text">
-                        Peek into a day with Kazeem, an SDE intern who worked in Amazon's Seattle office for his summer internship.                    </p>
-                    <div class="text-center">
-                      <a href="loading_page.php" target="_blank" class="btn text-center btn-primary">Apply Now</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            </figure>
+            <div class="article-body">
+              <h2>This is some title</h2>
+              <p>
+                This former #amazonintern and Shakespeare enthusiast is charting his own path and building the future for millions of customers.
+              </p>
+              <a href="#" class="read-more">
+                Read more <span class="sr-only">about this is some title</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </a>
             </div>
           </div>
+        </article>
+        <article>
+      
+          <div class="article-wrapper">
+            <figure>
+                <iframe width="100%" height="220" src="https://www.youtube-nocookie.com/embed/jRZzRiEapyQ?modestbranding=1&enablejsapi=1&color=white&rel=0&showinfo=0&origin=https://www.amazon.jobs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>  
+            </figure>
+            <div class="article-body">
+              <h2>This is some title</h2>
+              <p>
+                Learn what it’s like to work at Asterics where intern projects make a big impact for customers around the globe.              </p>
+              <a href="#" class="read-more">
+                Read more <span class="sr-only">about this is some title</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+        <article>
+      
+          <div class="article-wrapper">
+            <figure>
+                <iframe width="100%" height="220" src="https://www.youtube-nocookie.com/embed/HarPN825jxk?modestbranding=1&enablejsapi=1&color=white&rel=0&showinfo=0&origin=https://www.amazon.jobs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+            </figure>
+            <div class="article-body">
+              <h2>This is some title</h2>
+              <p>
+                Peek into a day with Kazeem, an SDE intern who worked in Amazon's Seattle office for his summer internship.                    </p>
+            </p>
+              <a href="#" class="read-more">
+                Read more <span class="sr-only">about this is some title</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+      </section>
 
+       
 
- 
- <section class="about-section section-padding" id="section_2">
+        <section class="about-section section-padding" id="section_2">
             <div class="container">
                 <div class="row">
 
@@ -306,14 +446,74 @@
 
 
 
-        
+        <section id="counter" class="sec-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 ">
+                        <div class="count"> <span class="fa fa-smile-o"></span>
+                            <p class="number" style="color: #fff;">126</p>
+                            <h4>OUR EMPLOYEES</h4> </div>
+                    </div>
+                    <div class="col-md-3 ">
+                        <div class="count"> <span class="fa fa-smile-o"></span>
+                            <p class="number" style="color: #fff;">535</p>
+                            <h4>NATIONALITIES</h4> </div>
+                    </div>
+                    <div class="col-md-3 ">
+                        <div class="count"> <span class="fa fa-smile-o"></span>
+                            <p class="number" style="color: #fff;">896</p>
+                            <h4>Total Hours</h4> </div>
+                    </div>
+                    <div class="col-md-3 ">
+                        <div class="count"> <span class="fa fa-smile-o"></span>
+                            <p class="number" style="color: #fff;">777</p>
+                            <h4>Projects Complete</h4> </div>
+                    </div>
+                </div>
+            </div>
+    
+            <script>
+                $(document).ready(function() {
+                  // Function to animate counting
+                  function animateCounting(element, targetValue) {
+                    $({ countNum: 0 }).animate(
+                      {
+                        countNum: targetValue,
+                      },
+                      {
+                        duration: 2000, // Adjust the duration as needed (in milliseconds)
+                        easing: "linear", // You can use "swing" for a different animation style
+                        step: function() {
+                          // Update the number text during the animation
+                          $(element).text(Math.floor(this.countNum));
+                        },
+                        complete: function() {
+                          // Update the number text after the animation is complete
+                          $(element).text(targetValue);
+                        },
+                      }
+                    );
+                  }
+              
+                  // Call the animateCounting function for each element
+                  $(".number").each(function() {
+                    var targetValue = parseInt($(this).text()); // Get the target number from the element's text
+                    animateCounting(this, targetValue); // Start the counting animation for each element
+                  });
+                });
+              </script>
+              
+        </section>
 
+
+       
+   
         <section class="artists-section section-padding " id="section_3">
             <div class="container ">
                 <div class="row justify-content-center">
 
                     <div class="col-12 text-center">
-                        <h2 class="mb-4">Meet Artists</h1>
+                        <h2 class="mb-4">MEET US    </h1>
                     </div>
 
                     <div class="col-lg-4 col-8 ">
@@ -795,7 +995,7 @@
                 <div class="row">
 
                     <div class="col-lg-3 col-12 mt-5">
-                        <p class="copyright-text">Copyright  @2018-23 | Designed with     by Asterisc Technocrat Pvt. Ltd.</p>
+                        <p class="copyright-text">Copyright  @2018-23 | Designed by Asterisc Technocrat Pvt. Ltd.</p>
                         <p class="copyright-text">Distributed by: <a href="https://www.technocrat.asterisc.in/index.html">AsteriscTechnocrat</a></p>
                     </div>
 
@@ -819,11 +1019,7 @@
         </div>
     </footer>
 
-    <!--
-
-T e m p l a t e M o
-
--->
+ 
 
     <!-- JAVASCRIPT FILES -->
     <script src="js/jquery.min.js"></script>

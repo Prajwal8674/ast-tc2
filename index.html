@@ -153,6 +153,190 @@ ul.price-list {
  
  <style>
 
+#one {
+  min-height:100vh;
+  background-image: linear-gradient(75deg, rgb(6 6 6 / 64%) 8%, transparent),
+    url("https://raw.githubusercontent.com/Nis-chal/dog_website_clone/main/images/banner1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#nav {
+  display: flex;
+  flex-direction: column;
+}
+#nav ul {
+  text-align: center;
+  margin: 0px 15px;
+  display: none;
+}
+
+#nav ul li {
+  background: white;
+  padding: 15px;
+}
+#nav ul li:nth-of-type(4)::after {
+  content: "\2228";
+  color: #fff;
+  font-size: 10px;
+  vertical-align: top;
+}
+#nav ul li:nth-of-type(1) a {
+  padding-bottom: 10px;
+  border-bottom: 0.25px solid white;
+}
+
+#nav ul li a {
+  color: black;
+  padding: 11em 0em;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+#nav ul li a:nth-of-type(3) {
+  color: black;
+}
+
+#nav ul li + li a:hover {
+  box-shadow: 1px 14px 0px -1px rgba(0, 0, 0, 0),
+    -1px 19px 0px -9px rgba(255, 255, 255, 1);
+
+  transition: 0.1s;
+}
+#nav ul li:first-child a {
+  color: #f85a40;
+}
+.nav-heading > span {
+  color: white;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.nav-heading > span:hover {
+  color: #f85a40;
+}
+
+.logo:hover {
+  color: #f85a40;
+}
+
+.nav-links .fa-moon {
+  display: none;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.nav-heading {
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
+  align-items: center;
+  display: flex;
+  gap: 7px;
+  margin-left: 15px;
+}
+
+.nav-links .search {
+  background: white;
+  border-radius: 15px;
+  padding: 0.5em;
+  border: 0.6px solid rgb(171, 162, 162);
+}
+.search-btn {
+  border: none;
+  background: white;
+  margin: 20px 0;
+}
+
+.nav-links input {
+  border: none;
+  outline: none;
+}
+.search-section {
+  background: white;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.hamburger {
+  display: flex;
+  color: white;
+  gap: 20px;
+  align-items: center;
+  margin-right: 10px;
+}
+.hamburger .fa-bars {
+  padding: 0.5em;
+  background: #f85a40;
+  color: #fff;
+  border-radius: 3px;
+}
+.content {
+  padding-left: 5%;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  padding: 11rem 0;
+}
+.text-content > h1 {
+  width: 440px;
+  font-size: 38px;
+  font-weight: 300;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 20px;
+  line-height: 55px;
+}
+
+.text-content > h4 {
+  font-size: 1.15rem;
+  letter-spacing: 0.35px;
+  font-weight: lighter;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 55px;
+}
+.two-button {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.w-btn {
+  color: #1a2c79;
+}
+.w-btn:hover {
+  background: transparent;
+  color: white;
+  border: 0.55px solid white;
+  transition: 0.55s;
+}
+.t-btn {
+  background: transparent;
+  border: 0.55px solid white;
+  color: white;
+}
+.t-btn:hover {
+  color: black;
+  background: white;
+  border: none;
+  transition: 0.55s;
+}
+
+.new-nav {
+  position: fixed;
+  width: 100vw;
+  z-index: 10 !important;
+  background: #fff;
+}
+
  </style>
 </head>
 
@@ -198,7 +382,7 @@ ul.price-list {
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_3">Artists</a>
+                            <a class="nav-link click-scroll" href="#section_3">Team</a>
                         </li>
 
                         <li class="nav-item">
@@ -404,28 +588,30 @@ ul.price-list {
 
                     <div class="col-lg-6 col-12 mb-4 mb-lg-0 d-flex align-items-center">
                         <div class="services-info">
-                            <h2 class="text-white mb-4">About Festava 2022</h2>
+                            <h2 class="text-white mb-4">About Asterisc Technocrat  </h2>
 
-                            <p class="text-white">Festava Live is free CSS template provided by TemplateMo website. This
-                                layout is built on Bootstrap v5.2.2 CSS library. You are free to use this template for
-                                your commercial website.</p>
+                            <p class="text-white">Asterisc Technocrat AN ISO 9001:2015 Internationally Certified & Central 
+                                India's high rating for Google reviews & most trusted company in nagpur, We are a superb custom 
+                                software development company in nagpur delivering impressive business IT Solutions and related services 
+                                to customers across the world. 
 
-                            <h6 class="text-white mt-4">Once in Lifetime Experience</h6>
+                            </p>
 
-                            <p class="text-white">You are not allowed to redistribute the template ZIP file on any other
-                                website without a permission.</p>
+                            <h6 class="text-white mt-4">Employment Experience</h6>
 
-                            <h6 class="text-white mt-4">Whole Night Party</h6>
+                            <p class="text-white">At Asterisc Technocrat, we care of our employees and our clients, they are most important part in our company. </p>
 
-                            <p class="text-white">Please tell your friends about our website. Thank you.</p>
+                            <h6 class="text-white mt-4">24/7 Support</h6>
+
+                            <p class="text-white">Our support and marketing strategies are available 24/7 for your business growth.</p>
                         </div>
                     </div>
 
                     <div class="col-lg-6 col-12">
                         <div class="about-text-wrap">
-                            <img src="images/pexels-alexander-suhorucov-6457579.jpg" class="about-image img-fluid">
+                            <img src="images/technocrat.png" class="about-image img-fluid">
 
-                            <div class="about-text-info d-flex">
+                            <!-- <div class="about-text-info d-flex">
                                 <div class="d-flex">
                                     <i class="about-text-icon bi-person"></i>
                                 </div>
@@ -436,7 +622,7 @@ ul.price-list {
 
                                     <p class="mb-0">your amazing festival experience with us</p>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
 
@@ -444,7 +630,87 @@ ul.price-list {
             </div>
         </section>
 
-
+        <section>
+            <section class="intro-section " data-dl-title="Join us">
+                <div class="container intro-container mar-bot-100 mar-top-100">
+                  <div class="row">
+                    <div class="col-12 col-lg-1 order-2"></div>
+                    <div class="col-lg-5 text-intro-box d-flex align-items-center order-1">
+                      <div class="pr-0 pr-md-0 intro-content">
+                        <h2 class="intro-heading text-uppercase mb-3" style="color:#000000">Join us</h2>
+                        <h3 class="intro-description ">Intern with TCS</h3>
+              
+                        <div class="article-tags my-3">
+              
+                        </div>
+              
+                        <div class="intro-text rte-links-div">
+                          <p>TCS makes it possible for you to achieve your fullest potential. We nurture our talent, and equip them to contribute to the creation of a better future. With exciting opportunities across a breadth of domains and industries, we encourage you to take the initial steps toward a fulfilling career with us.</p>
+                        </div>
+                      </div>
+                    </div>
+              
+                    <div class="col-lg-6 intro-player-box px-lg-0 order-2 ">
+                      <div class="text-with-assets-image-div d-flex align-items-center h-100 w-100">
+                        <div class="text-with-assets-image-innr-div w-100">
+              
+                          <div id="dynamicmedia_35301375" data-current-page="/content/tcs/global/en/careers/india/internship" data-page-locale="en" data-asset-path="TCSCOMprod/AdobeStock_491498665" data-asset-name="AdobeStock_491498665.jpeg" data-asset-type="image" data-viewer-path="https://s7ap1.scene7.com/s7viewers/" data-imageserver="https://s7ap1.scene7.com/is/image/" data-videoserver="https://s7ap1.scene7.com/is/content/" data-contenturl="https://s7ap1.scene7.com/is/content/" data-wcmdisabled="" data-dms7="" data-mode="smartcrop" data-alt="Intern holding coffee mug" class="s7dm-dynamic-media" data-custom-class="dynamic-media-image fit-cover">
+                            <div class="s7responsiveContainer">
+                              <img id="dynamicmedia_35301375_resp" src="https://s7ap1.scene7.com/is/image/TCSCOMprod/AdobeStock_491498665:Extra-Medium?wid=1641&amp;hei=1361&amp;dpr=off" data-src="https://s7ap1.scene7.com/is/image/TCSCOMprod/AdobeStock_491498665" class="fluidimage dynamic-media-image fit-cover" data-mode="smartcrop" data-enablehd="always" alt="Intern holding coffee mug" style="width: 100%;">
+                            </div>
+                          </div>
+              
+                        </div>
+                      </div>
+                    </div>
+              
+                  </div>
+                </div>
+              </section>
+              
+              <section class="intro-section" data-dl-title="AIESEC INTERNSHIP">
+                <div class="container intro-container">
+                  <div class="row">
+                    <div class="col-12 col-lg-1 order-2"></div>
+                    <div class="col-lg-5 text-intro-box d-flex align-items-center order-2 pl-3 pl-md-0">
+                      <div class="pr-0 pr-md-0 intro-content">
+                        <h2 class="intro-heading text-uppercase mb-3" style="color:#000000">AIESEC INTERNSHIP</h2>
+                        <h3 class="intro-description ">ACE career development programa</h3>
+              
+                        <div class="article-tags my-3">
+              
+                        </div>
+              
+                        <div class="intro-text rte-links-div">
+                          <p>TCS is recognized as a Global Exchange Partner of AIESEC. ACE Program provides career development opportunities for more than 200 AIESEC interns annually. It helps you Accelerate, Connect and Experience certainty with your internship with us.</p>
+                        </div>
+              
+                        <div class="content-link">
+                          <a href="https://www.tcs.com/careers/india/ace" class="  arrow-text2 position-relative cta-link-focus tcs-section-click">Read more about ACE</a>
+                        </div>
+              
+                      </div>
+                    </div>
+              
+                    <div class="col-lg-6 intro-player-box px-lg-0 order-1 ">
+                      <div class="text-with-assets-image-div d-flex align-items-center h-100 w-100">
+                        <div class="text-with-assets-image-innr-div w-100">
+              
+                          <div id="dynamicmedia_132342352" data-current-page="/content/tcs/global/en/careers/india/internship" data-page-locale="en" data-asset-path="TCSCOMprod/nokia-card" data-asset-name="nokia-card.jpg" data-asset-type="image" data-viewer-path="https://s7ap1.scene7.com/s7viewers/" data-imageserver="https://s7ap1.scene7.com/is/image/" data-videoserver="https://s7ap1.scene7.com/is/content/" data-contenturl="https://s7ap1.scene7.com/is/content/" data-wcmdisabled="" data-dms7="" data-mode="smartcrop" data-alt="ACE career development programa" class="s7dm-dynamic-media" data-custom-class="dynamic-media-image fit-cover">
+                            <div class="s7responsiveContainer">
+                              <img id="dynamicmedia_132342352_resp" src="https://s7ap1.scene7.com/is/image/TCSCOMprod/nokia-card:Extra-Medium?wid=1330&amp;hei=1103&amp;dpr=off" data-src="https://s7ap1.scene7.com/is/image/TCSCOMprod/nokia-card" class="fluidimage dynamic-media-image fit-cover" data-mode="smartcrop" data-enablehd="always" alt="ACE career development programa" style="width: 100%;">
+                            </div>
+                          </div>
+              
+                        </div>
+                      </div>
+                    </div>
+              
+                  </div>
+                </div>
+              </section>
+            </section>
+              
 
         <section id="counter" class="sec-padding">
             <div class="container">
@@ -524,26 +790,22 @@ ul.price-list {
                             </div>
 
                             <div class="artists-hover">
-                                <p>
+                                <p class="text-white">
                                     <strong>Name:</strong>
-                                    Madona
+                                    Chnadrakant Bobade
                                 </p>
 
-                                <p>
-                                    <strong>Birthdate:</strong>
-                                    August 16, 1958
-                                </p>
 
-                                <p>
-                                    <strong>Music:</strong>
-                                    Pop, R&amp;B
+                                <p class="text-white">
+                                    <strong>Position:</strong>
+                                    CEO/Instructor
                                 </p>
 
                                 <hr>
 
                                 <p class="mb-0">
-                                    <strong>Youtube Channel:</strong>
-                                    <a href="#">Madona Official</a>
+                                    <strong>Social Handle:</strong>
+                                    <a href="#">-</a>
                                 </p>
                             </div>
                         </div>
@@ -557,26 +819,23 @@ ul.price-list {
                             </div>
 
                             <div class="artists-hover">
-                                <p>
+                                <p class="text-white">
                                     <strong>Name:</strong>
-                                    Madona
+                                    Shrikant Bobade
                                 </p>
 
-                                <p>
-                                    <strong>Birthdate:</strong>
-                                    August 16, 1958
-                                </p>
+                              
 
-                                <p>
-                                    <strong>Music:</strong>
-                                    Pop, R&amp;B
+                                <p class="text-white">
+                                    <strong>Position:</strong>
+                                    Director
                                 </p>
 
                                 <hr>
 
                                 <p class="mb-0">
                                     <strong>Youtube Channel:</strong>
-                                    <a href="#">Madona Official</a>
+                                    <a href="#">-</a>
                                 </p>
                             </div>
                         </div>
@@ -590,26 +849,23 @@ ul.price-list {
                             </div>
 
                             <div class="artists-hover">
-                                <p>
+                                <p class="text-white">
                                     <strong>Name:</strong>
-                                    Rihana
+                                    Pooja Sao
                                 </p>
 
-                                <p>
-                                    <strong>Birthdate:</strong>
-                                    Feb 20, 1988
-                                </p>
+                              
 
-                                <p>
-                                    <strong>Music:</strong>
-                                    Country
+                                <p class="text-white">
+                                    <strong>Position:</strong>
+                                    Manager/Instructor
                                 </p>
 
                                 <hr>
 
-                                <p class="mb-0">
-                                    <strong>Youtube Channel:</strong>
-                                    <a href="#">Rihana Official</a>
+                                <p class="mb-0 ">
+                                    <strong>Social Handle:</strong>
+                                    <a href="#">-</a>
                                 </p>
                             </div>
                         </div>
@@ -937,7 +1193,7 @@ ul.price-list {
                         </li>
 
                         <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Artists</a>
+                            <a href="#" class="site-footer-link">Team</a>
                         </li>
 
                         <li class="site-footer-link-item">
@@ -1019,7 +1275,68 @@ ul.price-list {
         </div>
     </footer>
 
- 
+    
+
+    <section id="one">
+        <nav id="nav">
+
+            <div class="nav-logo">
+                <div class="nav-heading">
+                    <span href="#"><i class="fas fa-paw logo white"></i>Dogs Care</span>
+
+                </div>
+
+                <div class="hamburger">
+                    <a href="#"><i class="far fa-moon white "></i></a>
+                    <a href="#"><i class="fas fa-bars "></i></a>
+
+                </div>
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a>HOME</a></li>
+                <li><a>ABOUT</a></li>
+                <li><a>SERVICES</a></li>
+                <li><a>PAGES </a>
+
+                </li>
+                <li><a>CONTACT</a></li>
+
+
+
+                <div class="search-section">
+                    <span class="search"><input type="search" placeholder="Enter to search"> <button
+                            class="search-btn"><i class="fas fa-search"></i></button></span>
+                </div>
+
+                <span><i class="far fa-moon white night"></i></span>
+
+            </ul>
+
+
+        </nav>
+
+
+    <div class="content">
+        <div class="text-content">
+            <h1 class="white">Providing Special care
+                For <strong>Your Pets!</strong>
+            </h1>
+            <h4 class="blackish">We offer special services for special pets!</h4>
+            <div class="two-button">
+                <button class="w-btn btn">View Our Services</button>
+                <button class="t-btn btn">Hire Us</button>
+            </div>
+
+        </div>
+</section>
+
+
+    <script>
+
+    </script>
+
 
     <!-- JAVASCRIPT FILES -->
     <script src="js/jquery.min.js"></script>

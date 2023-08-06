@@ -605,12 +605,12 @@ strong {
 
 .artists-hover {
   background-color: var(--primary-color);
-  background-color: rgba(248, 203, 46, 0.75);
+  background-color: #a700a7b0;
   border-radius: var(--border-radius-medium);
   backdrop-filter: blur(5px) saturate(180%);
   -webkit-backdrop-filter: blur(5px) saturate(180%);
-  margin: 20px;
-  padding: 35px;
+  margin: 0px;
+  padding: 5px;
   transition: all 0.5s ease;
   transform: translateY(100%);
   position: absolute;
@@ -618,6 +618,7 @@ strong {
   right: 0;
   left: 0;
   opacity: 0;
+  color: white;
 }
 
 .artists-hover p strong {
@@ -1240,3 +1241,11 @@ Generic layout (demo looks)
   white-space: nowrap; 
   width: 1px;
 }
+
+/* margin*/
+.mar-bot-100{
+margin-bottom:100px;
+}
+.mar-top-100{
+  margin-top:100px;
+  }

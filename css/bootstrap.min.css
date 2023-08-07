@@ -7506,7 +7506,7 @@ fieldset:disabled .btn {
   padding-bottom: 1.5rem !important;
 }
 .py-5 {
-  padding-top: 3rem !important;
+  padding-top: 14rem !important;
   padding-bottom: 3rem !important;
 }
 .pt-0 {
@@ -7767,10 +7767,7 @@ fieldset:disabled .btn {
 }
 .bg-primary {
   --bs-bg-opacity: 1;
-  background-color: rgba(
-    var(--bs-primary-rgb),
-    var(--bs-bg-opacity)
-  ) !important;
+  background-image:url(/images/leadership-banner.jpeg);
 }
 .bg-secondary {
   --bs-bg-opacity: 1;

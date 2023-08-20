@@ -1104,7 +1104,8 @@ article {
   transform-origin: center;
   transition: all 0.4s ease-in-out;
   overflow: hidden;
-  
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
 
 }
 
@@ -1163,6 +1164,7 @@ article a .icon {
   transform: translateX(var(--link-icon-translate));
   opacity: var(--link-icon-opacity);
   transition: all 0.3s;
+  
 }
 
 /* using the has() relational pseudo selector to update our custom properties */
@@ -1171,7 +1173,6 @@ article:has(:hover, :focus) {
   --title-color: #28666e;
   --link-icon-translate: 0;
   --link-icon-opacity: 1;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 
@@ -1210,6 +1211,7 @@ Generic layout (demo looks)
     display: grid;
     grid-template-columns: 100px 1fr;
     gap: 16px;
+    
   }
   .article-body {
     padding-left: 0;
